@@ -1,0 +1,119 @@
+\appendix
+\input{backmatter/acronyms}
+\doublepage
+\chapter{Optimisation of cuts for \boldmath\bsphimumu\unboldmath}
+\label{appendix:optimisation} 
+In order to select \bsphimumu signal events and reject background events a cut-based selection was developed. It consists of several cuts on kinematic variables. The aim was to keep the number of cuts to a minimum in order to reduce uncertainties and not to favour certain regions of the \qs spectrum. The latter also ensures that the decays \bsjpsiphi and \bspsiprimephi are selected with the same set of cuts. The procedure of finding the optimum cut value for the cuts and the results are presented in this section. 
+\newline To find the optimal cut value for a cut on a certain variable the distributions of signal ($S$) and background ($B$) events of that variable were compared. \ac{mc} simulated events for \bsphimumu were used to obtain distributions for $S$. Events lying inside background regions in data were used to obtain distributions for $B$ (\eg events lying inside non-peaking regions). As the figure of merit $S/\sqrt{B}$ was used. For variables with a large discrimination power between $S$ and $B$ the figure of merit will peak sharply. When the distribution of the figure of merit shows a `plateau'-like feature the optimum cut value can be chosen to be one of the values along the range of the `plateau'. 
+\newline Several kinematic variables describing the daughter particles ($K^{\pm}$ and $\mu^{\pm}$), variables describing the \Bs decay vertex and variables related to the finite \Bs flight distance were considered. The optimisation procedure was as follows: 
+\begin{enumerate}
+\item A broad mass window of $\pm1\gevcc$ around the \Bs mass was applied on both the $S$ and the $B$ sample
+\item For each variable the distributions of $S$ and $B$ were normalised to unit area and the figure of merit ($S/\sqrt{B}$) was calculated
+\item From the position of the peak of the figure of merit an initial cut value was determined for each variable
+\end{enumerate}
+To confirm the cut value of a certain variable all initial cuts were applied on the $S$ and $B$ samples except for the given variable. The figure of merit was recalculated using the cut versions of $S$ and $B$. If the position of the peak (and therefore the optimal cut value) was significantly different to the previous outcome the initial cut value was adjusted. This was repeated for each variable. 
+\newline The distributions of $S$, $B$ and $S/\sqrt{B}$ for the main variables are shown in Figure~\ref{fig:cutoptimisation}. The final choice of cuts and the optimised cut values are summarised in Table~\ref{table:appendix:table}\subref{ap:optimised}. In most cases the chosen cut value does not correspond to the exact position of the maxima of the figure of merit as indicated in Figure~\ref{fig:cutoptimisation}. This is either due to a flat distribution of the figure of merit or due to manual adjustments (as outlined earlier). In future the selection can be improved by using more advanced techniques, such as boosted decision tree.
+\newline In Figure~\ref{fig:cutoptimisation} the distributions for $S$ were obtained from a \ac{mc} sample, which had one specific trigger configuration from 2010 simulated. The events for $B$ were obtained from 2010 data, where several different trigger configurations were used. This is the reason for small discrepancies observed in the various distributions - for example the different starting values of the two distributions for $\Bs$ $\tau$ in Figure~\ref{fig:cutoptimisation}(f). However, the effect of this on the chosen optimal cut values is negligible.       
+\newline For the stripping line \texttt{StrippingBs2MuMuPhi} the optimum cut values derived above were loosened for reasons explained in Section~\ref{ch4:stripping}. The loosened values used for this stripping line are summarised Table~\ref{table:appendix:table}\subref{ap:stripping}.\\\\
+\begin{table}[htb]
+\caption[The offline and stripping cuts for \bsphimumu]{The cuts chosen to select \bsphimumu events \subref{ap:optimised} and the loosened versions of the same cuts \subref{ap:stripping}, that are used in the stripping line \texttt{StrippingBs2MuMuPhi}.}
+\centering
+\subfloat[][]{\label{ap:optimised}
+\begin{tabular}{|l|r|}
+	\hline 
+	Variable & Cut value\\ 
+	\hline
+	$K^{\pm}$, $\mu^{\pm}$ $\chi^2_{\mathrm{IP}}$& $>16$\\
+	$K^{\pm}$ $\Delta\log\mathcal{L}$ & $>5$\\
+	$K^{\pm}$, $\mu^{\pm}$ \pt & $>300\mevc$\\ 
+	$\Bs$ $\tau$ & $>0.4\ps$\\
+	$\Bs$ $\chi^2_{\mathrm{VX}}$ & $<15$\\
+	$\Bs$ $\chi^2_{\mathrm{IP}}$ & $<6$\\
+	 \hline
+\end{tabular}}\qquad
+\subfloat[][]{\label{ap:stripping}
+\begin{tabular}{|l|r|}
+	\hline 
+	Variable & Cut value\\
+	\hline
+	$K^{\pm}$, $\mu^{\pm}$ $\chi^2_{\mathrm{IP}}$& $>9$\\
+	$K^{\pm}$ $\Delta\log\mathcal{L}$ & $>0$\\
+	& \\
+	$\Bs$ $\tau$ & $>0.2\ps$\\
+	$\Bs$ $\chi^2_{\mathrm{VX}}$ & $<40$\\
+	$\Bs$ $\chi^2_{\mathrm{IP}}$ & $<9$\\
+	\hline
+\end{tabular}}
+\label{table:appendix:table}
+\end{table}
+\begin{figure}[htb]
+\centering
+\subfloat[][{\label{ap:first:1}\normalsize $K^{+}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_K_PLUS_MINIPCHI2_S_.pdf}}%
+\subfloat[][{\normalsize $\mu^{+}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_MU_PLUS_MINIPCHI2_S_.pdf}}\\%
+\subfloat[][{\normalsize $K^{+}$ \pt}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_K_PLUS_PT_S_.pdf}}%
+\subfloat[][{\normalsize $\mu^{+}$ \pt}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_MU_PLUS_PT_S_.pdf}}\\%
+%\subfloat[][{\normalsize $\mu^{+}$ $\chi^{2}_{\rm track}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_MU_PLUS_TRACK_CHI2NDOF_S_.pdf}}\\%
+\subfloat[][{\normalsize $K^{+}$ $\Delta\log\mathcal{L}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_2_K_PLUS_PIDK_S_.pdf}}%
+\subfloat[][{\normalsize $\Bs$ $\tau$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_BS_TAU_S_.pdf}}\\%
+\caption[]{(continued on the next page)}
+\label{fig:cutoptimisation}
+\end{figure}
+\newpage
+\begin{figure}[htb]
+\ContinuedFloat
+\centering
+\subfloat[][{\normalsize $\Bs$ $\chi^2_{\mathrm{VX}}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_BS_ENDVERTEX_CHI2_S_.pdf}}%
+\subfloat[][{\label{ap:last:1}\normalsize $\Bs$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8.0cm]{chapter6/figs/SSB_2011_plot_2011_1_BS_TAUCHI2_S_.pdf}}\\%
+\caption[Cut optimisation for \bsphimumu]{The distributions of signal ($S$,~in~blue) and background ($B$,~in~red) events for different variables \subref{ap:first:1}-\subref{ap:last:1}. For $S$ events from \bsphimumu simulations were used. For $B$ events from data were used, that lie in the background regions. Indicated on each plot is also the figure of merit $S/\sqrt{B}$ (in~green), from which the final offline cut value was determined. All distributions are normalised to unit area as only the relative shapes of the distributions are of importance.}
+\label{fig:cutoptimisation}
+\end{figure}
+
+%%%%%%%%%%%  20101027_Rare_Decays_Meeting   contains more information about the stripping line!!!!!
+\doublepage
+\input{chapter5/trigger_list.tex}
+\doublepage
+\chapter{Comparison of data and simulation using \boldmath\bsjpsiphi\unboldmath}\label{appendix:datamc}
+The large number of \bsjpsiphi candidates in data enable accurate comparisons between data and simulation. The offline cut efficiencies evaluated using data and simulation are given in Table~\ref{table:datamceff}. The ratios of distributions between data and simulation for various kinematic variables are given in Figure~\ref{fig:ratiosamples}. Variables for which the description slightly varies between data and the \ac{mc} samples used are $\Bs$ $\chi^2_{\mathrm{IP}}$, $\Bs$ $\chi^2_{\mathrm{VX}}$ and $K^{\pm}$ $\Delta\log\mathcal{L}$. This difference is taken into account for in the analysis by assigning conservative systematic uncertainties for this effect and using look-up tables for \ac{pid} values, that are based on \ac{pid} performaces measured in data.
+\begin{table}[htb]
+\caption[The offline selection efficiencies for \bsjpsiphi in data and simulation]{The offline cut selection efficiencies determined for $\bsjpsiphi$ candidates in data and simulation (using the MC11a \bsjpsiphi sample). The efficiency was calculated according to Equation~\ref{ch6:eq::effminusone}.}
+\begin{center}
+\begin{tabular}{|ll|l|l|}
+	\hline 
+	\multicolumn{2}{|l|}{Offline cut} & Data & Simulation \\%(\%)\\
+	\hline
+	$K^{\pm}$ $\chi^2_{\mathrm{IP}}$&$>16$ & $0.943\pm0.002$ & $0.941\pm0.002$\\
+	$\mu^{\pm}$ $\chi^2_{\mathrm{IP}}$&$>16$ & $0.954\pm0.002$ & $0.948\pm0.002$\\ %did it work?
+	$K^{\pm}$ $\Delta\log\mathcal{L}$&$>5$& $0.835\pm0.003$ & $0.921\pm0.003$\\  %big difference
+	%before: $K^{\pm}$ $\Delta\log\mathcal{L}$&$>5$& $0.900\pm0.003$ & $0.915\pm0.002$\\
+	%$K^{\pm}$, $\mu^{\pm}$ KL distance $>5000$& $0.987\pm0.001$ & $0.982\pm0.001$\\	
+	$\Bs$ $\tau$&$>0.4\ps$ & $0.996\pm0.001$ & $0.997\pm0.001$\\	
+	$\Bs$ $\chi^2_{\mathrm{IP}}$&$<6$ & $0.913\pm0.003$ & $0.945\pm0.003$\\
+	$\Bs$ $\chi^2_{\mathrm{VX}}$&$<15$ & $0.895\pm0.003$ & $0.944\pm0.002$\\	
+	\hline
+\end{tabular}
+\end{center}
+\label{table:datamceff}
+\end{table}
+\begin{figure}[htb]
+\centering
+%\subfloat[][{\label{ap:first:2}\normalsize $B_{s}$ $\chi^2_{\mathrm{VX}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_BS_ENDVERTEX_CHI2_ratio.pdf}}%
+\subfloat[][{\label{ap:first:2}\normalsize $\Bs$ $\theta$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_BS_DIRA_OWNPV_ratio.pdf}}%
+\subfloat[][{\normalsize $\Bs$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_BS_TAUCHI2_ratio.pdf}}\\%
+\subfloat[][{\normalsize $\Bs$ $\tau$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_BS_TAU_ratio.pdf}}%
+\subfloat[][{\normalsize $\theta_{K^{+}K^{-}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_KKtheta_ratio.pdf}}\\%
+\subfloat[][{\normalsize $K^{-}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_K_MINUS_MINIPCHI2_ratio.pdf}}%
+\subfloat[][{\normalsize $K^{+}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_K_PLUS_MINIPCHI2_ratio.pdf}}\\%
+\caption[]{(continued on the next page)}
+\label{fig:ratiosamples}
+\end{figure}
+\newpage
+\begin{figure}[htb]
+\ContinuedFloat
+\centering
+\subfloat[][{\normalsize $\mu^{-}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_MU_MINUS_MINIPCHI2_ratio.pdf}}%
+\subfloat[][{\label{ap:last:2}\normalsize $\mu^{+}$ $\chi^2_{\mathrm{IP}}$}]{\includegraphics[width=8cm]{chapter6/figs/ratio_plots_MU_PLUS_MINIPCHI2_ratio.pdf}}\\%
+\caption[Ratios between data and \acs{mc} distributions for \bsjpsiphi]{The ratios of various kinematic variables for \bsjpsiphi candidates between data and simulation \subref{ap:first:2}-\subref{ap:last:2}.} 
+%Within statistical uncertainties all ratios are close to unity and no indication of a significant difference between data and simulation is observed.}
+\label{fig:ratiosamples}
+\end{figure}
+
