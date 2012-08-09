@@ -1,0 +1,24 @@
+\chapter{The acceptance correction for \BdToKstmm at \lhcb}
+
+\section{acceptance correction intro}
+
+\section{Monte CArlo simulations}
+
+\subsection{Data-Simulation corrections}
+
+
+\section{A full 4D acceptance correction}
+
+\subsection{algorithm}
+
+\subsection{validation}
+
+\subsection{results}
+
+\section{A factorised acceptance correction}
+
+\subsection{algorithm}
+
+\subsection{validation}
+
+\subsection{results}

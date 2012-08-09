@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Thesis master file
+%% Paul SCHAACK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt,a4paper,twoside]{report}
+
+
+% Packages -------------------------------------------------
+\usepackage[printonlyused]{acronym} % for linked acronyms
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+%\usepackage{style/binary} % required for hep particles (?) %already used by lhcb_symbols_def.tex
+\usepackage{booktabs} % for nicer spacing between table lines
+%\usepackage{style/braket} % for nicer bra ket notations %already in lhcb_symbols_def.tex
+\usepackage{style/cancel} %to cancel terms in equations
+\usepackage{caption}
+\usepackage{cite} % to compress consecutive references, i.e. 1,2,3,4 -> 1-4
+\usepackage{color} % for coloured text
+\usepackage[nodayofweek]{datetime} % for date format customisation
+\usepackage{enumitem} % for customisable lists
+\usepackage{fancyhdr} % for header/footer customisation
+\usepackage[bottom]{footmisc} % to force footnotes to bottom of page
+\usepackage{graphicx} % to include figures
+%\usepackage{style/hepnames} % to include hep names
+%\usepackage{style/hepparticles} % to include hep particles
+%\usepackage{style/hepunits} % to include hep units %already in lhcb_symbols_def.tex (most of them)
+\usepackage{ifthen} % for conditional statements
+\usepackage{lineno} % for line numbering during review
+\usepackage{mathtools} % for aligned matrices
+%\usepackage{style/maybemath} % required for hep particles %needed??
+\usepackage{multirow} % for table elements spanning multiple rows or columns
+\usepackage{setspace} % to change line spacing
+%\usepackage{style/SIunits} % to include SI units %already in lhcb_symbols_def.tex (most of them)
+\usepackage{subfig} % for figures within figures
+%\usepackage[notlof,notlot,nottoc]{tocbibind} % for contents list without figures, tables or contents
+\usepackage[nottoc]{tocbibind} % for contents list without figures, tables or contents
+\usepackage{upgreek} % for upright lowercase greek letters
+\usepackage{url} % for nicer urls \url{}
+\usepackage{xspace} % for intelligent spacing after alias commands
+
+
+% Choose border size -----------------------------------------
+\usepackage[margin=2.5cm]{geometry} % for screen
+%\usepackage[margin=2.5cm, inner=2.9cm, outer=2.1cm]{geometry} % for bound copy
+
+
+% Hyperlinks ------------------------------------------------
+\usepackage{hyperref} % must be the last package loaded
+\hypersetup{
+ urlcolor=black, linkcolor=black, citecolor=black, colorlinks=true, % coloured text or surrounding box
+ linktoc=all, % contents list link: none, section, page, all
+ % pdf viewer options
+ pdftitle = {Alex\rq{}s Thesis},
+ pdfauthor = {Alex Shires},
+ pdfstartpage=1, pdfstartview=FitV, pdfpagemode=UseOutlines, 
+ bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,
+}
+
+
+% Aliases and defintions ---------------------------------------------------
+\newboolean{articletitles}  %required in the bibliography
+\setboolean{articletitles}{true}
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %Set this to true to get roman particle symbols
+\input{tex/lhcb-symbols-def} % lhcb standard file
+%\input{tex/lhcb_symbols_def_mod} % lhcb standard file, modified by Chris Blanks
+\input{tex/definitions} % my own definitions
+
+%BOLD SYMBOLS IN TITLES
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+\numberwithin{equation}{chapter}
+% Make this the last packages you include before the \begin{document}
+%required for LHCb bibtext style! (and doesnt work when cite and mcite are in 'style')
+\usepackage{cite} % Allows for ranges in citations
+\usepackage{mciteplus}
+	
+
+% Document ------------------------------------------------
+\begin{document}
+
+\setcounter{secnumdepth}{2} % for title numbering down to \subsection
+\newboolean{onlymainmatter}
+\frenchspacing % for uniform spacing after all punctuation
+\singlespacing
+%\onehalfspacing
+%\doublespacing
+\raggedbottom % to stop variable spacing between paragraphs
+\sloppy % to relax the rules for line breaking
+
+\pagestyle{fancy}
+\fancyhf{} % remove everything
+\fancyhead[LE,RO]{\thepage} % page number on top outside corner
+\fancyhead[RE]{\nouppercase{\bf \leftmark}} % chapter on inside corner (uppercase breaks acronyms)
+\fancyhead[LO]{\nouppercase{\bf \rightmark}} % section on inside corner (ditto)
+\fancyfoot{} % empty
+
+%All new chapter and cleardoublepages have "plain"
+\fancypagestyle{plain}{ %
+\fancyhf{} % remove everything
+\fancyfoot[LE,RO]{\thepage}
+%if you dont want page numbers on even pages use the following instead:
+%\fancyfoot[RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}
+}
+%The title page has "empty"
+\fancypagestyle{empty}{ %
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}
+}
+\def\doublepage {\clearpage{\pagestyle{plain}\cleardoublepage}}
+
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+
+
+
+
+%++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++
+
+
+%% Draft mode options ------------------------------------------------
+
+%\linenumbers   %% turn on for draft mode
+\setboolean{onlymainmatter}{true}   %%'true' or 'false' 
+
+
+
+%%------------FRONTMATTER
+\ifthenelse{\boolean{onlymainmatter}}{
+\input{frontmatter/title}
+\tableofcontents
+}{
+\input{frontmatter/title}
+\doublepage % or \cleardoublepage for no page numbers
+\onehalfspace
+\input{frontmatter/front}
+\doublepage
+\listoffigures
+\doublepage
+\listoftables
+\doublepage
+}
+
+%%------------MAINMATTER	
+\input{chapter1/introduction}
+\newpage
+\input{chapter2/standardmodel}
+\newpage
+\input{chapter3/lhcbdetector}
+\newpage
+\input{chapter4/kstmmtheory}
+\newpage
+\input{chapter5/acceptance_correction}
+\newpage
+\input{chapter6/swave}
+\newpage
+\input{chapter7/dwave}
+\newpage
+
+
+%%------------BACKMATTER
+%\bibliographystyle{style/JHEP}    %either this
+\bibliographystyle{style/LHCb}        % or this... (better imo)
+\bibliography{main}
+
+%\doublepage
+%% to include LoA here and not in the appendix use this:
+%\phantomsection 
+%\addcontentsline{toc}{chapter}{List of Acronyms} 
+%\input{backmatter/acronyms}
+%\doublepage
+%%
+%% to include "Appendix" in ToC use this:
+%\phantomsection 
+%\addcontentsline{toc}{chapter}{Appendix}
+%%
+%\input{backmatter/appendix}
+%\doublepage
+
+
+%++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++
+
+
+\end{document}
+% ===============================================

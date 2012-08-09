@@ -1,0 +1,22 @@
+\ifx\mcitethebibliography\mciteundefinedmacro
+\PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
+{This bibstyle requires the use of the mciteplus package.}\fi
+\providecommand{\href}[2]{#2}
+\begin{mcitethebibliography}{1}
+\mciteSetBstSublistMode{n}
+\mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem{Melikhov:1998cd}
+D.~Melikhov, N.~Nikitin, and S.~Simula,
+  \ifthenelse{\boolean{articletitles}}{{\it {Probing right-handed currents in
+  \Bd\to\Kstar\ellell transitions}},
+  }{}\href{http://dx.doi.org/10.1016/S0370-2693(98)01271-4}{Phys.Lett. {\bf
+  B442} (1998) 381}, \href{http://xxx.lanl.gov/abs/hep-ph/9807464}{{\tt
+  arXiv:hep-ph/9807464}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

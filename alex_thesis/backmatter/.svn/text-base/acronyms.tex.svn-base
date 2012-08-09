@@ -1,0 +1,82 @@
+
+\chapter{List of Acronyms}
+
+\renewcommand{\bflabel}[1]{{\textbf{#1}\hfill}} % serif acronyms
+
+{\singlespace \boldmath
+
+\begin{acronym}[AAAAAAA]
+\acro {alice} [ALICE] {A Large Ion Collider Experiment}
+\acro {atlas} [ATLAS] {A Toroidal \acs{lhc} ApparatuS}
+\acro {bdt} [BDT] {Boosted Decision Tree}
+\acro {ccd} [CCD] {Charge-Coupled Device}
+\acro {cdf} [CDF] {Collider Detector at Fermilab}
+\acro {cern} [CERN] {European Organization for Nuclear Research}
+\acro {cfrp} [CFRP] {Carbon Fibre Reinforced Polymer}
+\acro {cms} [CMS] {Compact Muon Solenoid}
+\acro {cmssm} [CMSSM] {Constrained Minimal Supersymmetric Standard Model}
+\acro {cp} [\ensuremath{C\!P}] {Charge-Parity Symmetry}
+\acro {cpu} [CPU] {Central Processing Unit}
+\acro {dll} [DLL] {Delta Log-Likelihood Function}
+\acro {dzero} [D\O] {D Zero Experiment at Fermilab}
+\acro {ecal} [ECAL] {Electromagnetic Calorimeter}
+\acro {em} [EM] {Electromagnetic}
+\acro {fcnc} [FCNC] {Flavour Changing Neutral Current}
+\acro {fpga} [FPGA] {Field-Programmable Gate Array}
+\acro {gem} [GEM] {Gas Electron Multiplier}
+\acro {gut} [GUT] {Grand Unified Theory}
+\acro {gws} [GWS] {Glashow-Weinberg-Salam}
+\acro {hcal} [HCAL] {Hadron Calorimeter}
+\acro {hep} [HEP] {High Energy Physics}
+\acro {hlt} [HLT] {High Level Trigger}
+\acro {hpd} [HPD] {Hybrid Photon Detector}
+\acro {hqet} [HQET] {Heavy Quark Effective Theory}
+\acro {ip} [IP] {Impact Parameter}
+\acro {isr} [ISR] {Intersecting Storage Ring}
+\acro {it} [IT] {Inner Tracker}
+\acro {kek} [KEK] {High Energy Accelerator Research Organization}
+\acro {kekb} [KEKB] {\acs{kek} B-factory}
+\acro {l0} [L0] {Level\,0 Trigger}
+\acro {lams} [LAMS] {Laser Alignment Monitoring System}
+\acro {leir} [LEIR] {Low Energy Ion Ring}
+\acro {lep} [LEP] {Large Electron-Positron Collider}
+\acro {lhc} [LHC] {Large Hadron Collider}
+\acro {lhcb} [LHCb] {Large Hadron Collider beauty Experiment}
+\acro {mc} [MC] {Monte Carlo}
+\acro {mdcs} [MDCS] {Magnetic Distortion Calibration System}
+\acro {mfv} [MFV] {Minimal Flavour Violation}
+\acro {mwpc} [MWPC] {Multi-Wire Proportional Chamber}
+\acro {np} [NP] {New Physics}
+\acro {ope} [OPE] {Operator Product Expansion}
+\acro {ot} [OT] {Outer Tracker}
+\acro {pdf} [PDF] {Parton Density Function}
+\acro {pdg} [PDG] {Particle Data Group}
+\acro {pid} [PID] {Particle Identification}
+\acro {pmt} [PMT] {Photomultiplier Tube}
+\acro {ps} [PS] {Proton Synchrotron}
+\acro {pres} [PSD] {Pre-Shower Detector}
+\acro {psb} [PSB] {Proton Synchrotron Booster}
+\acro {pv} [PV] {Primary Vertex}
+\acro {pvss} [PVSS\,II] {Process Visualisation and Control System II}
+\acro {qcd} [QCD] {Quantum Chromodynamics}
+\acro {qed} [QED] {Quantum Electrodynamics}
+%\acro {rich} [RICH] {Ring Imaging $\check{\textnormal{C}}$herenkov Detector}
+\acro {rich} [RICH] {Ring Imaging Cherenkov Detector}
+\acro {rf} [RF] {Radio Frequency}
+\acro {scada} [SCADA] {Supervisory Control and Data Acquisition}
+\acro {slac} [SLAC] {Stanford Linear Accelerator Center}
+\acro {spd} [SPD] {Scintillating Pad Detector}
+\acro {sps} [SPS] {Super Proton Synchrotron}
+\acro {sm} [SM] {Standard Model}
+\acro {susy} [SUSY] {Supersymmetry}
+\acro {sv} [SV] {Secondary Vertex}
+\acro {tt} [TT] {Tracker Turicensis}
+\acro {ua1} [UA1] {Underground Area 1}
+\acro {ut} [UT] {Unitarity Triangle}
+\acro {vev} [VEV] {Vacuum Expectation Value}
+\acro {velo} [VELO] {Vertex Locator}
+\acro {wlcg} [WLCG] {Worldwide \acs{lhc} Computing Grid}
+\end{acronym}
+
+}
+

@@ -1,0 +1,245 @@
+<html>
+<head>
+<style>
+<!--
+body {width:auto;padding:5;margin:5;}
+.error {font-weight:bold;color:#f00;font-style:italic;}
+.word1,.word2,.word3 {color: #009;}
+.word2 {font-weight: 700;}
+.word3 {font-style: italic;}
+.command {color: #c00;}
+.exclcommand {color: #f99;}
+.option {color: #cc0;}
+.grouping, .document {color: #900; font-weight:bold;}
+.mathgroup {color: #090;}
+.exclmath {color: #6c6;}
+.ignore {color: #999;}
+.exclgroup {color:#c66;}
+.tc {color: #999; font-weight:bold;}
+.comment {color: #999; font-style: italic;}
+.state {color: #990; font-size: 70%;}
+.sumcount {color: #999; font-size: 80%;}
+.fileinclude {color: #696; font-weight:bold;}
+dl.count {background: #cfc; color: 009;}
+dl.count dt.header {font-weight: bold; font-style: italic; float: none;}
+dl.count dt {clear: both; float: left; margin-right: .5em;}
+dl.count dd {font-weight: bold;}
+dl.count dd.briefcount {font-weight: 700; clear: both; font-size:80%; font-weight:normal; margin-left:8pt;}
+.warning {color: #c00; font-weight: 700;}
+.parse, .count, .stylehelp, .filegroup {border: solid 1px #999; margin: 0pt; padding: 4pt;}
+.parse {font-size: 80%; background: #eef;}
+.parse {border-bottom:none;}
+.stylehelp {font-size: 80%; background: #ffc; margin-bottom: 8pt;}
+.filegroup {background: #efe; margin-bottom: 8pt;}
+-->
+</style>
+</head>
+<body>
+<h1>LaTeX word count</h1>
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter1/introduction.tex</dt>
+<dt>Words in text: </dt><dd>286</dd>
+<dt>Words in headers: </dt><dd>1</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>1</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>0</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter2/sm.tex</dt>
+<dt>Words in text: </dt><dd>3464</dd>
+<dt>Words in headers: </dt><dd>40</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>13</dd>
+<dt>Number of floats: </dt><dd>3</dd>
+<dt>Number of math inlines: </dt><dd>180</dd>
+<dt>Number of math displayed: </dt><dd>48</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter3/fcnc.tex</dt>
+<dt>Words in text: </dt><dd>2713</dd>
+<dt>Words in headers: </dt><dd>9</dd>
+<dt>Words in float captions: </dt><dd>19</dd>
+<dt>Number of headers: </dt><dd>8</dd>
+<dt>Number of floats: </dt><dd>6</dd>
+<dt>Number of math inlines: </dt><dd>188</dd>
+<dt>Number of math displayed: </dt><dd>17</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter4/detector.tex</dt>
+<dt>Words in text: </dt><dd>7538</dd>
+<dt>Words in headers: </dt><dd>26</dd>
+<dt>Words in float captions: </dt><dd>213</dd>
+<dt>Number of headers: </dt><dd>16</dd>
+<dt>Number of floats: </dt><dd>16</dd>
+<dt>Number of math inlines: </dt><dd>217</dd>
+<dt>Number of math displayed: </dt><dd>8</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter5/analysis1.tex</dt>
+<dt>Words in text: </dt><dd>3021</dd>
+<dt>Words in headers: </dt><dd>7</dd>
+<dt>Words in float captions: </dt><dd>537</dd>
+<dt>Number of headers: </dt><dd>10</dd>
+<dt>Number of floats: </dt><dd>16</dd>
+<dt>Number of math inlines: </dt><dd>226</dd>
+<dt>Number of math displayed: </dt><dd>13</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter5/table_COMBINED.tex</dt>
+<dt>Words in text: </dt><dd>0</dd>
+<dt>Words in headers: </dt><dd>0</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>0</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>0</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter5/trigger_list.tex</dt>
+<dt>Words in text: </dt><dd>45</dd>
+<dt>Words in headers: </dt><dd>0</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>1</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>3</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter6/analysis2.tex</dt>
+<dt>Words in text: </dt><dd>5269</dd>
+<dt>Words in headers: </dt><dd>15</dd>
+<dt>Words in float captions: </dt><dd>166</dd>
+<dt>Number of headers: </dt><dd>20</dd>
+<dt>Number of floats: </dt><dd>31</dd>
+<dt>Number of math inlines: </dt><dd>244</dd>
+<dt>Number of math displayed: </dt><dd>12</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: chapter7/conclusion.tex</dt>
+<dt>Words in text: </dt><dd>217</dd>
+<dt>Words in headers: </dt><dd>1</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>1</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>14</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: backmatter/acronyms.tex</dt>
+<dt>Words in text: </dt><dd>347</dd>
+<dt>Words in headers: </dt><dd>3</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>1</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>0</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: backmatter/appendix.tex</dt>
+<dt>Words in text: </dt><dd>632</dd>
+<dt>Words in headers: </dt><dd>10</dd>
+<dt>Words in float captions: </dt><dd>10</dd>
+<dt>Number of headers: </dt><dd>2</dd>
+<dt>Number of floats: </dt><dd>6</dd>
+<dt>Number of math inlines: </dt><dd>32</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: frontmatter/front.tex</dt>
+<dt>Words in text: </dt><dd>241</dd>
+<dt>Words in headers: </dt><dd>3</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>3</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>13</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+
+<div class='filegroup'>
+<dl class='count'>
+<dt class='header'>FILE: frontmatter/title.tex</dt>
+<dt>Words in text: </dt><dd>0</dd>
+<dt>Words in headers: </dt><dd>0</dd>
+<dt>Words in float captions: </dt><dd>0</dd>
+<dt>Number of headers: </dt><dd>0</dd>
+<dt>Number of floats: </dt><dd>0</dd>
+<dt>Number of math inlines: </dt><dd>0</dd>
+<dt>Number of math displayed: </dt><dd>0</dd>
+</dl>
+
+</div>
+
+<h2>Total word count</h2><dl class='count'>
+<dt class='header'>TOTAL COUNT</dt>
+<dt>Files: </dt><dd>13</dd>
+<dt>Words in text: </dt><dd>23773</dd>
+<dt>Words in headers: </dt><dd>115</dd>
+<dt>Words in float captions: </dt><dd>945</dd>
+<dt>Number of headers: </dt><dd>76</dd>
+<dt>Number of floats: </dt><dd>78</dd>
+<dt>Number of math inlines: </dt><dd>1117</dd>
+<dt>Number of math displayed: </dt><dd>98</dd>
+</dl>
+</body></html>

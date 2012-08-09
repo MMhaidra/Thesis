@@ -1,0 +1,55 @@
+\begin{titlepage}
+
+% Logos ---------------------------------------------------
+% \begin{figure}[h!]
+% \centering
+% \raisebox{0.3cm}{\includegraphics[height=1.6cm]{figs/imperial-logo}}
+% \hspace{4cm}
+% \includegraphics[height=2.2cm]{figs/lhcb-logo}
+% \end{figure}
+~
+\vspace{2.5cm}
+
+
+% Title --------------------------------------------------
+\begin{center}
+{\huge \bf \boldmath
+Understanding the \kpi spectrum of \BdToKstmm at \lhcb 
+}
+\end{center}
+
+\vspace{2.5cm}
+
+% Author -------------------------------------------------
+\begin{center}
+
+{\large
+Alex Shires \\
+}
+
+\vspace{0.5cm}
+
+High Energy Physics \\
+Blackett Laboratory \\
+Imperial College London \\
+
+\end{center}
+
+\vfill
+
+% Blurb ---------------------------------------------------
+\begin{center}
+
+A thesis submitted to Imperial College London \\
+for the degree of Doctor of Philosophy \\
+
+\vspace{0.5cm}
+
+%\the\day~\monthname~\the\year
+\monthname~\the\year
+
+\end{center}
+
+% Empty page ---------------------------------------------------
+\end{titlepage}
+
