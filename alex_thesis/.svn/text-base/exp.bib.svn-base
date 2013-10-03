@@ -1,0 +1,466 @@
+
+
+%%% EXPERIMENT
+
+
+
+%NEUTRAL CURRENT DISC
+
+@article{Hasert:1973ff,
+      author         = "Hasert, F.J. and others",
+      title          = "{Observation of Neutrino Like Interactions Without Muon
+                        Or Electron in the Gargamelle Neutrino Experiment}",
+      collaboration  = "Gargamelle Neutrino collaboration",
+      journal        = "Phys.Lett.",
+      volume         = "B46",
+      pages          = "138-140",
+      doi            = "10.1016/0370-2693(73)90499-1",
+      year           = "1973",
+      SLACcitation   = "%%CITATION = PHLTA,B46,138;%%",
+}
+
+% W
+@article{Arnison:1983rp,
+    author         = "Arnison, G. and others",
+    title          = "{Experimental Observation of Isolated Large Transverse Energy Electrons with Associated Missing Energy at $\sqrt{s} = 540$ GeV}",
+    collaboration  = "UA1 collaboration",
+    journal        = "Phys.Lett.",
+    volume         = "B122",
+    pages          = "103-116",
+    doi            = "10.1016/0370-2693(83)91177-2",
+    year           = "1983",
+    reportNumber   = "CERN-EP-83-13",
+    SLACcitation   = "%%CITATION = PHLTA,B122,103;%%",
+}
+% Z 
+@article{Arnison:1983mk,
+    author         = "Arnison, G. and others",
+    title          = "{Experimental Observation of Lepton Pairs of Invariant Mass Around 95-GeV/c**2 at the CERN SPS Collider}",
+    collaboration  = "UA1 collaboration",
+    journal        = "Phys.Lett.",
+    volume         = "B126",
+    pages          = "398-410",
+    doi            = "10.1016/0370-2693(83)90188-0",
+    year           = "1983",
+    reportNumber   = "CERN-EP-83-73",
+    SLACcitation   = "%%CITATION = PHLTA,B126,398;%%",
+}
+
+%% HIGGS
+@article{CMS:2012gu,
+    author         = "Chatrchyan, Serguei and others",
+    title          = "{Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC}",
+    collaboration  = "CMS collaboration",
+    journal        = "Phys.Lett.",
+    volume         = "B716",
+    pages          = "30-61",
+    doi            = "10.1016/j.physletb.2012.08.021",
+    year           = "2012",
+    eprint         = "1207.7235",
+    archivePrefix  = "arXiv",
+    primaryClass   = "hep-ex",
+    reportNumber   = "CMS-HIG-12-028, CERN-PH-EP-2012-220",
+    SLACcitation   = "%%CITATION = ARXIV:1207.7235;%%",
+}
+
+@article{ATLAS:2012gk,
+          author         = "Aad, Georges and others",
+          title          = "{Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC}",
+          collaboration  = "ATLAS collaboration",
+          journal        = "Phys.Lett.",
+          volume         = "B716",
+          pages          = "1-29",
+          doi            = "10.1016/j.physletb.2012.08.020",
+          year           = "2012",
+          eprint         = "1207.7214",
+          archivePrefix  = "arXiv",
+          primaryClass   = "hep-ex",
+          reportNumber   = "CERN-PH-EP-2012-218",
+          SLACcitation   = "%%CITATION = ARXIV:1207.7214;%%",
+}
+
+
+@Article{Aaltonen:2011cn,
+     author   = "Aaltonen, T. and others.",
+     collaboration= "{CDF Collaboration}",
+     title    = "{Measurement of the Forward-Backward Asymmetry in the  ${B^{0} \rightarrow K^{*0} \mu^+
+\mu^-}$ Decay and First Observation of the \Bs \to$\phi$\mumu Decay}",
+     journal  = "{Phys. Rev. Lett.}",
+     volume   = "{106}",
+     year     = "{2011}",
+     pages    = "{161801}",
+     eprint   = "{1101.1028}",
+     archivePrefix= "{arXiv}",
+     primaryClass  =  "{hep-ex}",
+     doi      = "{10.1103/PhysRevLett.106.161801}",
+     SLACcitation = "%CITATION = 1101.1028;%"
+}
+
+
+@article{Aaij:2011aa,
+      author        = "Aaij, R. and others.",
+      collaboration = "{LHCb collaboration}",
+      title         = "{Differential branching fraction and angular analysis of
+                        the decay ${B^{0} \rightarrow K^{*0} \mu^+
+                        \mu^-}$}",
+      year          = "{2011}",
+      eprint        = "{1112.3515}",
+      archivePrefix = "{arXiv}",
+      primaryClass  = "{hep-ex}",
+      reportNumber  = "{LHCB-PAPER-2011-020, CERN-PH-EP-2011-211}",
+      SLACcitation  = "{%CITATION = ARXIV:1112.3515;%}",
+}
+
+
+
+@Article{Aubert:2007hz,
+     author   = "Aubert, B. and others.",
+     collaboration = {{BaBar collaboration}},
+     title    = "{Measurement of decay amplitudes of $B\to J/\psi K^*$,
+                  $\psi(2S) K^*$, and $\chi_{c1} K^*$ with an angular analysis}",
+     journal  = "{Phys. Rev.}",
+     volume   = "{D76}",
+     year     = "{2007}",
+     pages    = "{031102}",
+     eprint   = "{0704.0522}",
+     archivePrefix= "{arXiv}",
+     primaryClass  =  "{hep-ex}",
+     doi      = "{10.1103/PhysRevD.76.031102}",
+     SLACcitation = "{%CITATION = 0704.0522;%}"
+}
+
+@article{Aaltonen:2011ja,
+      author        = "Aaltonen, T. and others.",
+      title         = "{Measurements of the angular distributions in the decays
+                         ${B^{0} \rightarrow K^{*0} \mu^+
+\mu^-}$ at CDF}",
+      collaboration = "{CDF collaboration}",
+      year          = "{2011}",
+      eprint        = "{1108.0695]}",
+      archivePrefix = "{[arXiv}",
+      primaryClass  = "{hep-ex}",
+}
+
+
+
+@Article{Aubert:2008ju,
+     author   = "Aubert, B. and others.",
+     collaboration= "{BaBar collaboration}",
+     title    = "{Angular distributions in the decays \BdToKstll }",
+     journal  = "{Phys.\, Rev.}",
+     volume   = "{D79}",
+     year     = "{2009}",
+     pages    = "{031102}",
+     eprint   = "{0804.4412}",
+     archivePrefix= "{arXiv}",
+     primaryClass  =  "{hep-ex}",
+     doi      = "{10.1103/PhysRevD.79.031102}",
+     SLACcitation = "{%CITATION = 0804.4412;%}"
+}
+
+
+@Article{PhysRevLett.103.171801,
+      title= "{Measurement of the differential branching fraction and forward-backward asymmetry for \BdToKstll }",
+      author        = "Wei, J.-T. and others.",
+      collaboration = "{Belle collaboration}",
+      journal       = "{Phys.\, Rev.\, Lett.}",
+      volume        = "{103}",
+      pages         = "{171801}",
+      doi           = "{10.1103/PhysRevLett.103.171801}",
+      year          = "{2009}",
+      eprint        = "{0904.0770}",
+      archivePrefix = "{arXiv}",
+      primaryClass  = "{hep-ex}",
+}
+
+% GENERIC BD TO JPSIKPI IWTH SWAVE
+@Article{Aubert:2004cp,
+     author   = "Aubert, B. and others.",
+     collaboration= "{BaBar collaboration}",
+     title    = "{Ambiguity-free measurement of $\cos 2\beta$: Time-integrated
+                  and time-dependent angular analyses of $B \rightarrow \jpsi K
+                  \pi$}",
+     journal  = "{Phys. Rev.}",
+     volume   = "{D71}",
+     year     = "{2005}",
+     pages    = "{032005}",
+     eprint   = "{hep-ex/0411016}",
+     archivePrefix= "{arXiv}",
+     doi      = "{10.1103/PhysRevD.71.032005}",
+     SLACcitation = "%CITATION = HEP-EX/0411016;%",
+}
+
+% USING THE SWAVE TO DISAMBIGUATE PHIS
+@article{Aaij:2012eq,
+      author        = "Aaij, R. and others.",
+      title         = "{Determination of the sign of the decay width difference
+                        in the $B_s$ system}",
+      collaboration = "{LHCb collaboration}",
+      year          = "{2012}",
+      eprint        = "{1202.4717}",
+      archivePrefix = "{arXiv}",
+      primaryClass  = "{hep-ex}",
+      reportNumber  = "{CERN-PH-EP-2012-050, LHCB-PAPER-2011-028}",
+      SLACcitation  = "{%CITATION = ARXIV:1202.4717;%}",
+}
+
+% Z440 contains mkpi destription
+@article{Aubert:2008aa,
+      author        = "Aubert, B. and others.",
+      title         = "{Search for the Z(4430)- at BaBar}",
+      collaboration = "{BaBar collaboration}",
+      journal       = "{Phys.Rev.}",
+      volume        = "{D79}",
+      pages         = "{112001}",
+      doi           = "{10.1103/PhysRevD.79.112001}",
+      year          = "{2009}",
+%      note          = "{37 pages, 36 figures,}",
+      eprint        = "{0811.0564}",
+      archivePrefix = "{arXiv}",
+      primaryClass  = "{hep-ex}",
+      reportNumber  = "{SLAC-PUB-13437, BABAR-PUB-08-045}",
+      SLACcitation  = "{%CITATION = ARXIV:0811.0564;%}",
+}
+
+%LASSS
+@article{Aston:179353,
+      author      = "Aston, D  and others",
+	collaboration= "{LASS collaboration}",
+      title       = "{A study of \Km\pip scattering in the reaction \Km p \to \Km\pip n  at 11 \gev / c}",
+      journal     = "{Nucl. Phys. B}",
+      number      = "{DPNU-87-25. SLAC-PUB-4260}",
+      volume      = "{296}",
+      pages       = "{493. 58 p}",
+      month       = "{Mar}",
+      year        = "{1987}"
+}
+
+% BABAR KPIPI0 with LASS
+@Article{Aubert:2004bt,
+     author   = "Aubert, B. and others.",
+    collaboration= "{BaBar collaboration}",
+     title    = "{\Bd \to \Kp \pim pi0 Dalitz plot analysis}",
+     year     = "{2004}",
+     eprint   = "{hep-ex/0408073}",
+     archivePrefix= "{arXiv}",
+     SLACcitation = "{%CITATION = HEP-EX/0408073;%}"
+}
+
+%PHI S REFERENCES
+%% DO 
+@article{Abazov:2011ry,
+      author         = "Abazov, Victor Mukhamedovich and others",
+      title          = "{Measurement of the CP-violating phase $\phi_s^{J/\psi
+                        \phi}$ using the flavor-tagged decay $B_s^0 \rightarrow
+                        J/\psi \phi$ in 8 fb$^{-1}$ of $p \bar{p}$ collisions}",
+      collaboration  = "D0 collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D85",
+      pages          = "032006",
+      doi            = "10.1103/PhysRevD.85.032006",
+      year           = "2012",
+      eprint         = "1109.3166",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-11-463-E",
+      SLACcitation   = "%%CITATION = ARXIV:1109.3166;%%",
+}
+
+
+%%CDF
+@article{CDF:2011af,
+      author         = "Aaltonen, T. and others",
+      title          = "{Measurement of the CP-Violating Phase
+                        $\beta_s^{J/\Psi\phi}$ in $B^0_s \to J/\Psi \phi$ Decays
+                        with the CDF II Detector}",
+      collaboration  = "CDF collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D85",
+      pages          = "072002",
+      doi            = "10.1103/PhysRevD.85.072002",
+      year           = "2012",
+      eprint         = "1112.1726",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-11-646-E",
+      SLACcitation   = "%%CITATION = ARXIV:1112.1726;%%",
+}
+
+
+@article{Aaij:1407836,
+        author       = "Aaij, R and others",
+        title        = "{Measurement of the CP-violating phase $\phi_s$ in the decay
+                        $B^{0}_s \to J/\psi \phi$}",
+        collaboration = "{LHCb collaboration}",
+        journal      = "Phys. Rev. Lett.",
+        number       = "arXiv:1112.3183. CERN-PH-EP-2011-214. LHCB-PAPER-2011-021",
+        volume       = "108",
+        pages        = "101803. 9 p",
+        month        = "Dec",
+        year         = "2011",
+}
+
+
+
+
+% SWAVE KAPPA
+
+@article{PhysRevLett.89.121801,
+      title = {Dalitz Plot Analysis of the Decay 
+          ${D}^{+}\rightarrow{}{K}^{-}{\pi{}}^{+}{\pi{}}^{+}$ 
+              and Indication of a Low-Mass Scalar $K\pi{}$ Resonance},
+        author = {Aitala, E. M. and Amato, S. and Anjos, J. C. and Appel, J. A. and 
+Ashery, D. and Banerjee, S. and Bediaga, I. and Blaylock, G. and Bracker, S. B. and Burchat,
+ P. R. and Burnstein, R. A. and Carter, T. and Carvalho, H. S. and Copty, N. K. and Cremaldi, 
+L. M. and Darling, C. and Denisenko, K. and Devmal, S. and Fernandez, A. and Fox, G. F. and
+ Gagnon, P. and G\"obel, C. and Gounder, K. and Halling, A. M. and Herrera, G. and Hurvits, G. 
+and James, C. and Kasper, P. A. and Kwan, S. and Langs, D. C. and Leslie, J. and Lundberg, B. 
+and Magnin, J. and Massafferri, A. and MayTal-Beck, S. and Meadows, B. and de Mello Neto, J. R. T. 
+and Mihalcea, D. and Milburn, R. H. and de Miranda, J. M. and Napier, A. and Nguyen, A. and d'Oliveira, A. B. 
+and O'Shaughnessy, K. and Peng, K. C. and Perera, L. P. and Purohit, M. V. and Quinn, B. and Radeztsky, S. 
+and Rafatian, A. and Reay, N. W. and Reidy, J. J. and dos Reis, A. C. and Rubin, H. A. and Sanders, D. A. 
+and Santha, A. K. S. and Santoro, A. F. S. and Schwartz, A. J. and Sheaff, M. and Sidwell, R. A. 
+and Slaughter, A. J. and Sokoloff, M. D. and Salinas, C. J. Solano and Stanton, N. R. and Stefanski, R. J. 
+and Stenson, K. and Summers, D. J. and Takach, S. and Thorne, K. and Tripathi, A. K. and Watanabe, S. 
+and Weiss-Babai, R. and Wiener, J. and Witchey, N. and Wolin, E. and Yang, S. M. and Yi, D. and Yoshida, S. 
+and Zaliznyak, R. and Zhang, C.},
+        collaboration = {Fermilab E791 collaboration},
+        journal = {Phys. Rev. Lett.},
+        volume = {89},
+        issue = {12},
+        pages = {121801},
+        numpages = {5},
+        year = {2002},
+        month = {Aug},
+        doi = {10.1103/PhysRevLett.89.121801},
+        publisher = {American Physical Society}
+}
+
+
+%%%%%%% RED EXP
+
+@article{PhysRevLett.103.241801,
+  title = "{Measurement of Inclusive Radiative $B$-Meson Decays with a Photon Energy Threshold of 1.7~GeV}",
+  author = {Limosani, A. and others},
+  collaboration = "{Belle collaboration}",
+  journal = {Phys. Rev. Lett.},
+  volume = {103},
+  issue = {24},
+  pages = {241801},
+  numpages = {6},
+  year = {2009},
+  month = {Dec},
+  doi = {10.1103/PhysRevLett.103.241801},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.103.241801},
+  publisher = {American Physical Society}
+}
+
+
+
+@article{babar:exp-b2kstgamma:2009,
+    Archiveprefix = {arXiv},
+    Author = {Aubert, B and others},
+    collaboration = {{BaBar collaboration}},
+    Date-Added = {2010-12-15 15:15:01 +0100},
+    Date-Modified = {2011-09-19 20:08:24 +0200},
+    Doi = {10.1103/PhysRevLett.103.211802},
+    Eprint = {0906.2177},
+    Journal = {Phys. Rev. Lett.},
+    Keywords = {radiative-decays; experimental-results; babar},
+    Pages = {211802},
+    Primaryclass = {hep-ex},
+    Slaccitation = {%%CITATION = 0906.2177;%%},
+    Title = {{Measurement of branching fractions and CP and isospin asymmetries in $B \to K^{*}(892) \gamma$ decays}},
+    Volume = {103},
+    Year = {2009},
+}
+
+
+@article{PhysRevLett.71.674,
+    title = {Evidence for penguin-diagram decays: First observation of $B \to K^{*}(892)\gamma${}},
+    collaboration = "{CLEO  collaboration}",
+    journal = {Phys. Rev. Lett.},
+    volume = {71},
+    issue = {5},
+    pages = {674--678},
+    year = {1993},
+    month = {Aug},
+    doi = {10.1103/PhysRevLett.71.674},
+    url = {http://link.aps.org/doi/10.1103/PhysRevLett.71.674},
+    publisher = {American Physical Society}
+}
+
+
+% HFAG
+
+
+
+@article{hfag:2012,
+    author         = "Amhis, Y. and others",
+    title          = "{Averages of b-hadron, c-hadron, and tau-lepton
+        properties as of early 2012}",
+collaboration  = "Heavy Flavor Averaging Group",
+year           = "2012",
+eprint         = "1207.1158",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+SLACcitation   = "%%CITATION = ARXIV:1207.1158;%%",
+}
+
+
+% DST D) MASS REFERENCE
+@article{Aaij:2011ad,
+    author         = "Aaij, R. and others",
+    title          = "{Measurement of mixing and CP violation parameters in two-body charm decays}",
+    collaboration  = "LHCb collaboration",
+    journal        = "JHEP",
+    volume         = "04",
+    pages          = "129",
+    doi            = "10.1007/JHEP04(2012)129",
+    year           = "2012",
+    eprint         = "1112.4698",
+    archivePrefix  = "arXiv",
+    primaryClass   = "hep-ex",
+    reportNumber   = "LHCB-PAPER-2011-032, CERN-PH-EP-2011-206",
+    SLACcitation   = "%%CITATION = ARXIV:1112.4698;%%",
+}
+
+
+%% CMS SUSY
+
+@article{Chatrchyan:2013lya,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Search for supersymmetry in hadronic final states with
+                        missing transverse energy using the variables $\alpha_T$
+                        and b-quark multiplicity in pp collisions at $\sqrt{s}$ =
+                        8 TeV}",
+      collaboration  = "CMS Collaboration",
+      year           = "2013",
+      eprint         = "1303.2985",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SUS-12-028, CERN-PH-EP-2013-037",
+      SLACcitation   = "%%CITATION = ARXIV:1303.2985;%%",
+}
+
+
+
+
+% LHCB SECOND KSTMM
+
+@article{Aaij:2013iag,
+      author         = "Aaij, R. and others",
+      title          = "{Differential branching fraction and angular analysis of
+                        the decay $B^{0} \to K^{*0} \mu^{+}\mu^{-}$}",
+      collaboration  = "LHCb Collaboration",
+      journal        = "JHEP",
+      volume         = "08",
+      pages          = "131",
+      doi            = "10.1007/JHEP08(2013)131",
+      year           = "2013",
+      eprint         = "1304.6325",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2013-074, LHCB-PAPER-2013-019",
+      SLACcitation   = "%%CITATION = ARXIV:1304.6325;%%",
+}

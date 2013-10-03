@@ -1,0 +1,60 @@
+{
+//=========Macro generated from canvas: Canvas_1/Canvas_1
+//=========  (Tue Nov 13 18:24:10 2012) by ROOT version5.34/00
+   TCanvas *Canvas_1 = new TCanvas("Canvas_1", "Canvas_1",258,100,1018,772);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   Canvas_1->Range(-153.8462,-0.1633543,1128.205,2.890888);
+   Canvas_1->SetFillColor(10);
+   Canvas_1->SetBorderMode(0);
+   Canvas_1->SetBorderSize(2);
+   Canvas_1->SetTickx(1);
+   Canvas_1->SetTicky(1);
+   Canvas_1->SetLeftMargin(0.12);
+   Canvas_1->SetTopMargin(0.05);
+   Canvas_1->SetBottomMargin(0.16);
+   Canvas_1->SetFrameFillColor(0);
+   Canvas_1->SetFrameBorderMode(0);
+   Canvas_1->SetFrameBorderMode(0);
+   Double_t xAxis1[16] = {0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 1000}; 
+   
+   TH1F *h_ratio_25_ratio = new TH1F("h_ratio_25_ratio","h_ratio_25_ratio",15, xAxis1);
+   h_ratio_25_ratio->SetBinContent(1,0.4866019);
+   h_ratio_25_ratio->SetBinContent(2,0.4489892);
+   h_ratio_25_ratio->SetBinContent(3,0.6033348);
+   h_ratio_25_ratio->SetBinContent(4,0.7069377);
+   h_ratio_25_ratio->SetBinContent(5,0.8017113);
+   h_ratio_25_ratio->SetBinContent(6,0.8998799);
+   h_ratio_25_ratio->SetBinContent(7,1.01381);
+   h_ratio_25_ratio->SetBinContent(8,1.179167);
+   h_ratio_25_ratio->SetBinContent(9,1.291227);
+   h_ratio_25_ratio->SetBinContent(10,1.535421);
+   h_ratio_25_ratio->SetBinContent(11,1.703657);
+   h_ratio_25_ratio->SetBinContent(12,2.068686);
+   h_ratio_25_ratio->SetBinContent(13,2.280973);
+   h_ratio_25_ratio->SetBinContent(14,2.461325);
+   h_ratio_25_ratio->SetBinContent(15,2.575462);
+   h_ratio_25_ratio->SetBinError(1,0.05185103);
+   h_ratio_25_ratio->SetBinError(2,0.01214506);
+   h_ratio_25_ratio->SetBinError(3,0.01016072);
+   h_ratio_25_ratio->SetBinError(4,0.009993305);
+   h_ratio_25_ratio->SetBinError(5,0.01079542);
+   h_ratio_25_ratio->SetBinError(6,0.01231461);
+   h_ratio_25_ratio->SetBinError(7,0.01467126);
+   h_ratio_25_ratio->SetBinError(8,0.01814104);
+   h_ratio_25_ratio->SetBinError(9,0.02211013);
+   h_ratio_25_ratio->SetBinError(10,0.02841044);
+   h_ratio_25_ratio->SetBinError(11,0.03533124);
+   h_ratio_25_ratio->SetBinError(12,0.04592537);
+   h_ratio_25_ratio->SetBinError(13,0.05709436);
+   h_ratio_25_ratio->SetBinError(14,0.07049762);
+   h_ratio_25_ratio->SetBinError(15,0.04781663);
+   h_ratio_25_ratio->SetEntries(21149.56);
+   h_ratio_25_ratio->GetYaxis()->SetTitle("Occupancy ratio");
+   h_ratio_25_ratio->GetXaxis()->SetTitle("number of tracks");
+   h_ratio_25_ratio->Draw("");
+   Canvas_1->Modified();
+   Canvas_1->cd();
+   Canvas_1->SetSelected(Canvas_1);
+   Canvas_1->SaveAs("track_occ.pdf");
+}

@@ -1,0 +1,35 @@
+\section{Introduction}
+
+Measuring the contribution of a \kpi S-wave in \BdToKpimm is a requirement 
+to understand biases in future measurements of the \BdToKstll angular distribution as shown in the previous chapter.
+%The previous chapter shows that a \kpi S-wave could
+%have a significant effect on the angular observables for datasets over 200 events.
+%A measurement of the \kpi S-wave in \BdToKstmm will allow the inclusion of the S-wave 
+%in the angular distribution, separating the P-wave angular observables.
+% This will also improve the quality of fits by accommodating an asymmetry in \ctk.
+There are no previous measurements of the S-wave in electroweak penguin decays. 
+The closest related measurements of S-wave contributions in decays of \B mesons to
+ a \kpimm final state are from \BdToJpsiKstar~\cite{Aubert:2004cp,LHCB-PAPER-2012-014}
+which give a total \kpi S-wave fraction of 7\% in the mass window from 800 to 1000\mev.
+However, the production  of the \kpi state in the electroweak penguins is different from \BdToJpsiKstar 
+due to the different form factors.
+%presence of right-handed \Kstarzz amplitudes and 
+
+To measure the \kpi S-wave in \BdToKpimm, the formalism set out in Chapter~\ref{chap:swave:theo}
+ was combined with the techniques developed in 
+Chapter~\ref{chap:kstmm} and applied to the data collected at \lhcb in 2011.
+In this chapter, the measurement proceeds as follows.
+Firstly, the data and the simulation used to make the measurement are detailed in Section~\ref{sec:swave:meas:data}.
+The selection of \BdToKpimm candidates in a wider range of \kpi masses is detailed in Section~\ref{sec:swave:meas:sel} and 
+ the  acceptance correction for this wide \kpi mass range is described in Section~\ref{sec:swave:meas:ac}.
+The model used to parametrise the distribution of \BdToKpimm candidates is detailed in 
+Section~\ref{sec:swave:meas:angdist}.
+%and consists of empirical descriptions for the \kpimm and \kpi mass distributions.
+%and the theoretical \BdToKpimm angular distribution.
+The method used to apply the model to the data and extract the S-wave fraction in the P-wave 
+mass window is described in Section~\ref{sec:swave:meas:fitmethod}.
+Sources of systematic uncertainty and possible biases to the measurement 
+are given in Sec.~\ref{sec:swave:meas:sys} and 
+the results of the measurement of the \kpi S-wave contribution to \BdToKpimm 
+are presented in Section~\ref{sec:swave:meas:res}.
+

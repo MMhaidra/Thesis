@@ -1,0 +1,88 @@
+\section{Fit for \FS}
+\label{sec:swave:meas:angdist}
+
+
+\subsection{Fit model}
+
+The model used to describe the \kpi and \kpimm mass distribution of \BdToKpimm candidates  is a combination
+of theoretically derived expressions and empirical functions for the \Bd mass and the \kpi mass. % and the angle \ctk.
+The signal model is factorised into a model for the \Bd mass distribution and a model for the \kpi mass distribution.
+This is because the difference in phase space available for the \kpimm decay 
+between low and high \B mass is only significant at very high \qsq, as shown in Fig.~\ref{fig:phasespace} and thus can be ignored.
+The background model is factorised into one model for the \mkpimm background and one for the \mkpi background.
+The total model for \mkpimm and \mkpi is given by 
+\begin{align}
+\label{eq:swave:meas:sig:pdf}
+f(\mB, \mkpi) =& f_S \left( S( \mkpimm ) \times S ( \mkpi ; \FS ) \right)  \nonumber\\
+ & + ( 1 - f_S ) \left( B(\mkpimm ) \times B(\mkpi) \right) 
+\end{align}
+where $S$ is the signal model, $B$ is the background model and $f_S$ was the fraction of signal \BdToKpimm candidates in the data.
+
+\subsubsection{Model for \mkpimm}
+
+The distribution of \BdToKpimm events in terms of the \kpimm invariant mass 
+is described by the same model used in Section~\ref{sec:kstmm:massmodel}.
+This is a double Crystal Ball function for the signal shape 
+and an exponential function to describe the decreasing combinatorial background,
+\begin{align}
+S\left( \mkpimm ; \sigma_1, \sigma_2, \alpha, n \right) &= 
+\, f \times \, CB\left(  \mkpimm  ; m_B , \sigma_1, 	\alpha, n \right) \nonumber\\
+& + \left(1-f\right) \times CB\left(  \mkpimm ; m_B , \sigma_2, \alpha, n \right) \, , \\
+B\left(\mkpimm;\lambda\right) &= N_B \exp{\left(-\lambda\mkpimm\right)} \ ,
+\end{align}
+where $\alpha$, $n$ and $\sigma_{1,2}$ are the Crystal Ball parameters and $\lambda$ describes the exponential decay.  
+
+\subsubsection{Model for \mkpi}
+
+The distribution of signal events in terms of \mkpi is given by the integral of the angular distribution (see Sec.~\ref{sec:swave:theo:obs}) over \ctk, 
+\begin{align}
+\label{eq:swave:meas:sig:swave}
+S(\mkpi;\FSi) &= \int \dctk ~ S(\mkpi,\ctk;\FSi,\ASi,\FL) \nonumber\\
+&=  \int \dctk ~ \left( \frac{1}{2} \FSi(\mkpi) + \ASi(\mkpi) \ctk \right) \nonumber \\
+&\quad+ \int \dctk ~ \FPi(\mkpi)\bigg[ \frac{3}{2}  \FL \ctksq +  \frac{3}{4} ( 1 - \FL ) ( 1 - \ctksq ) \bigg]  \, ,
+\end{align}
+where \FSi and \FPi are functions of \mkpi that describe the S-wave and P-wave respectively, along with the asymmetry \ASi.
+The P-wave observable is the fraction of the \Kstarzo longitudinal polarisation, \FL.
+The integrated signal distribution over \ctk from $-1$ to $1$ is simply given by 
+\begin{align}
+\label{eq:swave:meas:sig:swave:int} 
+S(\mkpi;\FSi) =  \FSi(\mkpi) + \FPi(\mkpi) \, .
+\end{align}
+The functions describing the S-wave and P-wave are given by
+\begin{align}
+\FSi(\psq) &= \rho(\psq, \qsq, J) \times \NS \times P_0(\psq) \, ,\\
+\FPi(\psq) &= \rho(\psq, \qsq, J) \times \NP \times P_1(\psq) \, ,
+%\ASi(\psq) &= \sqrt{ \FSi(\psq) \FPi(\psq)  } \times \AS
+\end{align}
+where $N_0$ and $N_1$ are the normalisation of each state and
+$\rho$ is a phase space factor. % and \AS was contains the interference between the S- and P-wave amplitudes. 
+The normalisation parameters are directly correlated to the total number of
+events so the relation $\NP = 1 - \NS$ was used to constrain the signal model further.
+
+The propagator for the P-wave, $P_1$, is well understood and described by the relativistic Breit-Wigner formula as detailed in Eq.~\ref{eq:rbw}.
+The propagator for the S-wave, $P_0$, can be modelled by either the 
+LASS parametrisation~\cite{Aston:179353} or with an isobar model~\cite{PhysRevLett.89.121801}.
+The details of each of the models are given in Sec~\ref{sec:swave:theo}.
+
+The phase space factor, $\rho$, is dependent on \psq, \qsq and the spin of the \Kstarz state, $J$.
+In order to integrate the angular distribution over \qsq, the \qsq dependence of the phase space factor was approximated by using the \qsq value in the centre of the bin in \qsq. 
+This approximation contributes a possible source of systematic uncertainty.
+
+The distribution of background events in \mkpi is modelled by
+\begin{align}
+B(\mkpi) &=   f_B \times P_1(\mkpi)  + (1 - f_B ) \times B_1(\mkpi ; m_0, A , B , C )  \, ,
+\end{align}
+where there are two functions for the \mkpi background model.
+
+The background contribution from \kpi P-wave events is modelled using a relativistic Breit-Wigner function, 
+as detailed in Eq.~\ref{eq:rbw}, which shares parameters with the signal model for the \BdToKpimm P-wave propagator.
+The contribution from both combinatorial background and S-wave background is accounted for by using a function 
+developed to parametrise the background in fits to the mass difference of \Dstar and \D mesons~\cite{Aaij:2011ad},
+\begin{align}
+\label{eq:swave:mkpi:background}
+B_1(\mkpi ; m_0, A, B, C ) &= \left(1-e^{-(\mkpi - m_0)/C}\right) \times \left(\frac{\mkpi}{m_0}\right)^{A} + B \left(\frac{\mkpi}{m_0} - 1 \right)
+\end{align}
+where $m_0$ is the \mkpi threshold and $A$,$B$ and $C$ are arbitrary parameters.
+%The distribution of background in terms of \ctk is is modelled using a second order Chebychev polynomial.
+%The assumption that the background in \kpimm, \kpi and \ctk factorises was valid if 
+%any dominant sources of peaking backgrounds that correlate between \mkpi and \ctk are minimal.

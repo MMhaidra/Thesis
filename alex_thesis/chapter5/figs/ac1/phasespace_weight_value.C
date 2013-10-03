@@ -1,0 +1,61 @@
+{
+//=========Macro generated from canvas: c/
+//=========  (Fri Nov 30 17:13:08 2012) by ROOT version5.34/00
+   TCanvas *c = new TCanvas("c", "",0,0,700,500);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   c->SetHighLightColor(2);
+   c->Range(-1.037037,-23.11437,6.37037,105.2988);
+   c->SetFillColor(0);
+   c->SetBorderMode(0);
+   c->SetBorderSize(2);
+   c->SetTickx(1);
+   c->SetTicky(1);
+   c->SetLeftMargin(0.14);
+   c->SetRightMargin(0.05);
+   c->SetBottomMargin(0.18);
+   c->SetFrameLineWidth(3);
+   c->SetFrameBorderMode(0);
+   c->SetFrameLineWidth(3);
+   c->SetFrameBorderMode(0);
+   
+   TH1D *h1 = new TH1D("h1","",30,0,6);
+   h1->SetBinContent(4,21);
+   h1->SetBinContent(5,78);
+   h1->SetBinContent(6,39);
+   h1->SetBinContent(7,12);
+   h1->SetBinContent(8,5);
+   h1->SetBinContent(9,3);
+   h1->SetBinContent(21,1);
+   h1->SetEntries(159);
+   h1->SetStats(0);
+   h1->SetLineWidth(3);
+   h1->SetMarkerStyle(20);
+   h1->GetXaxis()->SetTitle("#omega");
+   h1->GetXaxis()->SetNdivisions(505);
+   h1->GetXaxis()->SetLabelFont(132);
+   h1->GetXaxis()->SetLabelOffset(0.01);
+   h1->GetXaxis()->SetLabelSize(0.08);
+   h1->GetXaxis()->SetTitleSize(0.096);
+   h1->GetXaxis()->SetTitleOffset(0.85);
+   h1->GetXaxis()->SetTitleFont(132);
+   h1->GetYaxis()->SetTitle("Events");
+   h1->GetYaxis()->SetNdivisions(505);
+   h1->GetYaxis()->SetLabelFont(132);
+   h1->GetYaxis()->SetLabelOffset(0.01);
+   h1->GetYaxis()->SetLabelSize(0.08);
+   h1->GetYaxis()->SetTitleSize(0.096);
+   h1->GetYaxis()->SetTitleOffset(0.75);
+   h1->GetYaxis()->SetTitleFont(132);
+   h1->GetYaxis()->SetTitle("Events");
+   h1->GetZaxis()->SetLabelFont(132);
+   h1->GetZaxis()->SetLabelSize(0.08);
+   h1->GetZaxis()->SetTitleSize(0.096);
+   h1->GetZaxis()->SetTitleOffset(1.2);
+   h1->GetZaxis()->SetTitleFont(132);
+   h1->Draw("e");
+   c->Modified();
+   c->cd();
+   c->SetSelected(c);
+   c->SaveAs("phasespace_weight_value.pdf");
+}

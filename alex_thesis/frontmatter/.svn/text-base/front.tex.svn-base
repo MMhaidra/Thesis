@@ -1,21 +1,102 @@
 % Frontmatter ----------------------------------------------
 \chapter*{Declaration}
-The work presented in this thesis was carried out between October 2009 and \monthname~\the\year. It is the result of my own studies, with the support of members of the Imperial College \acs{hep} group and the broader \acs{lhcb} collaboration. The work of others is explicitly referenced.
+
+The work presented in this thesis was carried out between October 2009 and \monthname~\the\year. 
+It is the result of my own studies, with the support of members of the Imperial College HEP group and 
+the broader \lhcb collaboration. The work of others is explicitly referenced.
+
+The following specific contributions were made by myself.
+\begin{enumerate}
+\item In Chapter~\ref{chap:lhcb} describing the \lhcb experiment, Section~\ref{sec:lhcb:trigdev} on the development of the trigger at \lhcb for electroweak penguin and semi-leptonic decays.
+\item In Chapter~\ref{chap:kstmm}, describing the angular analysis of \BdToKstmm at \lhcb, 
+Section~\ref{sec:kstmm:ac} detailing the acceptance correction and 
+Section~\ref{sec:kstmm:sys}, giving the methods to assess the data-simulation corrections and the acceptance correction for possible sources of systematic uncertainty. 
+\item In Chapter~\ref{chap:swave:theo}, the analysis of the effect of a \kpi S-wave in \BdToKstll.
+\item In Chapter~\ref{chap:swave:meas}, the measurement of a \kpi S-wave in \BdToKstmm.
+\end{enumerate}
+
+This thesis has not been submitted for any other qualification. 
+The measurements presented in Chapter~\ref{chap:kstmm} appear in Refs~\cite{LHCb-PAPER-2011-020} 
+and~\cite{Aaij:2013iag}.
+The results of the \kpi S-wave theoretical work appear in~\cite{Blake:2012mb}.
+The measurements of the \kpi S-wave in \BdToKstmm have not been published but will be used 
+in future analyses of electroweak penguin decays at \lhcb.
+
 \begin{flushright} 
 \emph{Alex Shires, \the\day~\monthname~\the\year}
 \end{flushright}
 
-\doublepage\
+\vspace*{\fill}
 
 
-\chapter*{Abstract}
-\BdToKstmm, acceptance correciton, S-wave, D-wave
+
+{\scriptsize The copyright of this thesis rests with the author and is made available under a 
+Creative Commons Attribution Non-Commercial No Derivatives licence. 
+Researchers are free to copy, distribute or transmit the thesis on the condition that they attribute it, 
+that they do not use it for commercial purposes and that they do not alter, transform or build upon it.
+ For any reuse or redistribution, researchers must make clear to others the license terms of this work
+ (Imperial College London  PhD regulations 2012).}
+ 
+\vspace*{\fill}
+
+{\scriptsize All plots that are marked as coming from papers of the LHCb collaboration are available 
+ under the CC-BY 3.0 license, \href{http://creativecommons.org/licenses/by/3.0/}{http://creativecommons.org/licenses/by/3.0/.}  
+ }
+
 \doublepage
 
 
-\chapter*{Preface}
-Thanks!
-\\doublepage
+\chapter*{Abstract}
+
+The angular distribution of \BdToKstmm was studied using  
+1.0\invfb of $pp$ collisions recorded at the \lhcb detector at the \lhc.
+Angular observables are measured in five independent bins of the di-muon invariant mass squared, \qsq, 
+and the theoretically interesting region from $1 < \qsq < 6 \gevgevcccc$.
+The results are in good agreement with Standard Model predictions.
+
+The contribution from a \kpi S-wave is included in the angular distribution of \BdToKpill.
+The \kpi S-wave is shown to have an overall dilution effect on measurements of the \BdToKpill angular observables. 
+For an S-wave contribution of 7\% between a \kpi invariant mass squared of $0.64<\psq<1.0\gevgevcccc$, there is a significant 
+bias on the angular observables for dataset of over 500 events.
+It is possible to remove this bias by incorporating the S-wave into the angular distribution
+ and by fitting the \kpi mass spectrum. 
+
+The fraction of the S-wave in \BdToKstmm, \FS, was analysed in seven bins of \qsq using 1.0\invfb of data from \lhcb.
+The value of \FS in the region from $1 < \qsq < 6 \gevgevcccc$  and from $0.64<\psq<1.0\gevgevcccc$ 
+was found to be $$\FS = 0.083^{+0.057}_{-0.048}(\mathrm{stat.})^{+0.018}_{-0.050} (\mathrm{syst.}).$$
+In the regions where no S-wave is found, 95\% confidence limits are given.
+These measurements show that the  \kpi S-wave will be a vital consideration for future measurements of \BdToKstll.
+
+\doublepage
+
+
+\chapter*{Acknowledgements}
+
+I would like to express my gratitude to the Science and Technologies Facilities Council 
+and to the European Organisation for Nuclear Research (\cern) for giving me the opportunity to pursue this PhD,
+both in London and in Geneva.
+Special thanks to Imperial College London for allowing me to do both my undergraduate and postgraduate studies at
+such an illustrious institution. %I wouldn't have wanted it any other way.
+
+I would not have been able to do any of this work without the hundreds of 
+scientists and engineers who develop and run the \lhc and participate in \cern.
+It was an honour to work within the \lhcb collaboration and be part of the the Rare Decays working group.
+I have enjoyed working with the \BdToKstmm `task-force' of
+ Ulrik Egede, Mitesh Patel, Thomas Blake, Nicola Serra, Michel de Cian and Chris Parkinson.
+Special thanks to Tom for going beyond the call of duty to work with us.
+
+Thank you to the Imperial College HEP group and especially to my supervisor Ulrik Egede, 
+for his support over the years and for giving me the chance to work in HEP, 
+both as an undergraduate and as a postgraduate.
+
+Cheers to Bryn, Martyn, Nick, Rosie, Sam R, Sandra and Wren for life in Geneva, 
+to Sam I for cake and sanity-restoring chat in London,
+to the Orchestra Saint-Pierre Fusterie for a year of music in French
+and to the Battersea Badgers for keeping the cricket alive.
+Thanks to Carla for her love and support at the critical time. I can never thank you enough and look forward to being able to repay you in kind.
+Thanks to Chris Parkinson for being an excellent colleague and friend; it just wouldn't have been the same without you.
+
+\doublepage
 
 
 % Contents lists ----------------------------------------------

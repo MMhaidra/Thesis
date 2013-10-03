@@ -1,0 +1,217 @@
+\chapter{Tables of systematic contributions }
+\label{app:kstmm:systematics}
+
+\section{The angular analysis of \BdToKstmm of 0.38\invfb}
+
+The estimated value for the sources of systematic uncertainty for the differential branching fraction, \AFB and \FL. 
+The effects included for the data-simulation corrections are the relative tracking efficiency, the relative trigger efficiency, the PID correction and the relative muon identification efficiency.
+The additional variations in the signal mass model and the background mass model along are included.
+The dominant effect is from the error on the weights from the acceptance correction.
+
+\begin{table}[H]
+\centering
+\caption{
+Systematic uncertainty on the estimate of $A_{FB}$ in each of the $q^{2}$ bins. 
+\label{tab:fit:systematics:afb}
+}
+\vspace{5mm}
+{\scriptsize
+\begin{tabular}{|c|cccccccc|c|}
+\hline
+$q^{2} (\gev^{2}/c^{4})$ & Relative tracking  & Relative trigger  & PID. & $\mu$-ID & Bkg. & Sig. Mass  & Bkg. Mass &  Weights & Tot. \\ 
+& efficiency & efficiency & correction & & Model & Model & Model & & \\
+\hline
+$0.10 < q^{2} < 2.00$ & 0.01  & $<$0.01  &	$<$0.01 &	$<$0.01 &	0.04 &	$<$0.01 &	0.01 &	0.03 &	0.06 \\ 
+$2.00 < q^{2} < 4.30$ & $<$0.01	 &$<$0.01 &	$<$0.01	 &$<$0.01 &	0.03 &	$<$0.01	 &0.01 &	0.03 &	0.04 \\
+$4.30 < q^{2} < 8.68$ & $<$0.01 &	$<$0.01	 &$<$0.01 &	$<$0.01 &	0.02 &	$<$0.01 &	$<$0.01 &	0.01 &	0.02 \\
+$10.09 < q^{2} < 12.86$ & 0.01 &	0.01 &	$<$0.01	 &0.01	 &$<$0.01 &	$<$0.01 &	$<$0.01 &	0.02 &	0.02 \\
+$14.18 < q^{2} < 16.00$ & $<$0.01 &	$<$0.01 &	$<$0.01 &	$<$0.01 &	0.01 &	0.01 &	$<$0.01 &	0.02 &	0.03 \\
+$16.00 < q^{2} < 19.00$ & 0.02 &	0.02 &	$<$0.01 &	0.02 &	0.01 &	$<$0.01 &	$<$0.01	 &0.04 &	0.06 \\
+$1.00 < q^{2} < 6.00$ & 0.01 &	$<$0.01	 &$<$0.01 &	$<$0.01 &	0.02 &	$<$0.01 &	0.01 &	0.03 &	0.04 \\
+\hline
+\end{tabular} 
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{
+Systematic uncertainty on the estimate of $F_{L}$ in each of the $q^{2}$ bins. 
+\label{tab:fit:systematics:fl}
+}
+\vspace{5mm}
+{\scriptsize
+\begin{tabular}{|c|cccccccc|c|}
+\hline
+$q^{2} (\gev^{2}/c^{4})$ & Relative tracking  & Relative trigger  & PID. & $\mu$-ID & Bkg. & Sig. Mass  & Bkg. Mass &  Weights & Tot. \\ 
+& efficiency & efficiency & correction & & Model & Model & Model & & \\
+\hline
+$0.10 < q^{2} < 2.00$ & $<$0.01  & $<$0.01  &	$<$0.01 &	$<$0.01 &	0.02 &	$<$0.01 &	$<$0.01 &	$<$0.01 &	0.02 \\ 
+$2.00 < q^{2} < 4.30$ & 0.01	 & 0.01 &	$<$0.01	 & 0.01 &	0.02 &	$<$0.01	 & 0.01 &	0.01 &	0.03 \\
+$4.30 < q^{2} < 8.68$ & $<$0.01 &	$<$0.01	 &$<$0.01 &	$<$0.01 &	$<$0.01 &	$<$0.01 &	$<$0.01 &	0.01 &	0.01 \\
+$10.09 < q^{2} < 12.86$ & 0.01 &	0.01 &	$<$0.01	 & 0.01	 & 0.01 &	$<$0.01 &	$<$0.01 &	0.02 &	0.03 \\
+$14.18 < q^{2} < 16.00$ & 0.02 &	0.01 &	$<$0.01 &	0.01 &	0.02 &	0.01 &	$<$0.01 &	0.03 &	0.05 \\
+$16.00 < q^{2} < 19.00$ & 0.01 &	0.01 &	$<$0.01 &	0.01 &	$<$0.01 &	$<$0.01 &	$<$0.01	 & 0.03 &	0.03 \\
+$1.00 < q^{2} < 6.00$ & 0.01 &	0.01	 & $<$0.01 & 0.01 &	0.02 &	$<$0.01 &	$<$0.01  &	0.02 &	0.03 \\
+\hline
+\end{tabular} 
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{
+Systematic uncertainty on the estimate of $d{BF}/dq^{2}$ in each of the $q^{2}$ bins. 
+\label{tab:fit:systematics:dgamma}
+}
+\vspace{5mm}
+{\scriptsize
+\begin{tabular}{|c|cccccccc|c|}
+\hline
+$q^{2} (\gev^{2}/c^{4})$ & Relative tracking  & Relative trigger  & PID. & $\mu$-ID & Bkg. & Sig. Mass  & Bkg. Mass &  Weights & Tot. \\ 
+& efficiency & efficiency & correction & & Model & Model & Model & & \\
+\hline
+$0.10 < q^{2} < 2.00$ & 0.03	& 0.02	& $<$0.01	& 0.04	& 0.02	& 0.02	& 0.01	& 0.06 \\
+$2.00 < q^{2} < 4.30$ & 0.01	& 0.01	& $<$0.01	& 0.01	& $<$0.01	& 0.01	& $<$0.01	& 0.02 \\
+$4.30 < q^{2} < 8.68$ & 0.02	& 0.02	& $<$0.01	& 0.03	& 0.01	& 0.02	& 0.01	& 0.05 \\
+$10.09 < q^{2} < 12.86$ & 0.01	& 0.03	& $<$0.01	& 0.04	& 0.04	& 0.03	& 0.01	& 0.07 \\
+$14.18 < q^{2} < 16.00$ & 0.02	& 0.02	& $<$0.01	& 0.03	& 0.02	& 0.02	& 0.01	& 0.05 \\
+$16.00 < q^{2} < 19.00$ & 0.03	& 0.01	& $<$0.01	& 0.02	& 0.02	& 0.01	& 0.01	& 0.05 \\
+$1.00 < q^{2} < 6.00$ & 0.01	& 0.01	& $<$0.01	& 0.02	& $<$0.01	& 0.01	& $<$0.01	& 0.03 \\
+\hline
+\end{tabular} 
+}
+\end{table}
+
+
+\section{The angular analysis of \BdToKstmm of 1.0\invfb}
+
+The values of the contributions from possible sources of systematic uncertainty for the angular analysis of \BdToKstmm based on 1.0\invfb of data are given below. 
+A glossary of the contributions described in Sec.~\ref{sec:kstmm:sys} are given in Table~\ref{sys:gloss}.
+The contributions to \AFB. \FL, \OS3 and \OS9 are given in Tables~\ref{tab:systematics:afb},~\ref{tab:systematics:fl},~\ref{tab:systematics:s3} and~\ref{tab:systematics:s9}.
+The contributions to \ATRe, \ATIm, \AT2 and \OA9 are given in Tables~\ref{tab:systematics:ati},~\ref{tab:systematics:atr},~\ref{tab:systematics:at2} and ~\ref{tab:systematics:a9}.
+The contributions to the measurement of the differential branching fraction are given in Table~\ref{tab:systematics:dbr}
+
+\begin{landscape}
+\begin{table}[H]
+\caption{A glossary of the possible sources of systematic uncertainty~\label{sys:gloss}}
+\begin{tabular}{|r|l|}
+\hline
+Systematic  & Description \\
+\hline
+\hline
+CTK[\ldots] & Variation of the acceptance in \ctk by $\pm10\%$ \\
+\hline
+CTL[\ldots] & Variation of the acceptance in \ctl by $\pm10\%$ \\
+\hline
+CTL,CTK[\ldots] & Variation of the acceptance in \ctl and \ctk by $\pm10\%$ in a factorisable way \\
+\hline
+Nonfac  & Variation of the acceptance in \ctl and \ctk by 10\% in a non-factorisable way \\
+\hline
+HadronP     & Removal of tracks with $p < 5\gevc$ in the analysis and \\ & acceptance correction \\
+\hline
+Muon ID      & Variation of \texttt{IsMuon} relative efficiency within \\ & its measured uncertainty \\
+\hline
+% Bkg Order[1,3] & Variation of the background order to be order 1 \\ & or order 3 \\
+% \hline
+KPI[\ldots] & Variation of the $\Kstarz\to\Kstarzb$ mis-ID \\
+\hline
+NoMultCan   & Removal of events containing multiple candidates \\
+\hline
+Sigma[\ldots] & Variation of the mass resolution of \BdToKstmm with \\ & respect to \decay{\Bd}{\Kstarz\jpsi} by 5\%  \\
+\hline
+Tracking    & Variation of the relative tracking efficiency between data \\ & and MC within in the measured uncertainty \\
+\hline
+Trigger     & Simulation of trigger efficiency with a 3\% efficiency loss \\ & for soft-muons \\
+\hline
+S-wave & See text \\ &  \\
+\hline
+PID Correction [Up,Down] &  Assignment of DLL value for neighbouring bin  \\ & for events close to bin edge \\
+\hline
+Bin [ Up, Down ]  &  Change \qsq binning scheme  \\ & take acceptance for bin above or bin below. \\
+\hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/afb_systematics}
+}
+\caption{Variation of \AFB when systematically varying fit parameters or the weights applied to the data.\label{tab:systematics:afb}}
+\end{table}
+
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/fl_systematics}
+}
+\caption{Variation of \FL when systematically varying fit parameters or the weights applied to the data. \label{tab:systematics:fl}}
+\end{table}
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/s3_systematics}
+}
+\caption{Variation of $S_{3}$ when systematically varying fit parameters or the weights applied to the data.\label{tab:systematics:s3}}
+\end{table}
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/s9_systematics}
+}
+\caption{Variation of $S_{9}$ when systematically varying fit parameters or the weights applied to the data. \label{tab:systematics:s9}}
+\end{table}
+
+%==============================================================================
+
+
+
+%==============================================================================
+%==============================================================================
+%==============================================================================
+%==============================================================================
+
+
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/atr_systematics}
+}
+\caption{Variation of \ATRe when systematically varying fit parameters or the weights applied to the data.\label{tab:systematics:atr}}
+\end{table}
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/at2_systematics}
+}		
+\caption{Variation of \AT2 when systematically varying fit parameters or the weights applied to the data.\label{tab:systematics:at2}}
+\end{table}
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/ati_systematics}
+}
+\caption{Variation of \ATIm  when systematically varying fit parameters or the weights applied to the data. \label{tab:systematics:ati}}
+\end{table}
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/a9_systematics}
+}
+\caption{Variation of $A_{9}$ when systematically varying fit parameters or the weights applied to the data. \label{tab:systematics:a9}}
+\end{table}
+
+
+\begin{table}
+{\scriptsize
+\input{appendix/systematics_txt_files/diffBr_systematics}
+}
+\caption{Variation of the differential branching fraction measurement when systematically varying fit parameters or the weights applied to the data. \label{tab:systematics:dbr}}
+\end{table}
+
+\end{landscape}
+
+
+

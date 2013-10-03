@@ -1,0 +1,185 @@
+\section{Angular analysis}
+\label{sec:kstmm:pdf}
+
+Each of the angular analyses were performed by simultaneously fitting a \PDF for the mass and the angular distribution 
+to the data. % the extended maximum likelihood fit method.
+%The \PDF used is a combination of a model for the the \Bd mass spectrum and the angular \PDF.
+The simultaneous fit to the \Bd mass spectrum and to the angles ensures that the
+ maximum information available is used to reduce the error on all of the angular observables.
+It also ensures that the correlations are propagated correctly between the angular observables.
+The total \PDF ($F$) is a combination of a model for the signal ($S$) and background ($B$) ,
+each containing component \PDFs to describe the mass distribution and the angular distribution,
+\begin{align}
+F(\mB, \ctl, \ctk, \phi) = & f_{sig} \left( S_{i}(\mB) \times S_{i}(\ctl,\ctk,\phi) \right) \nonumber \\ 
+&+ ( 1 - f_{sig} ) \left( B_{i}(\mB) \times B_{i}(\ctl,\ctk,\phi) \right) \, .
+\end{align}
+where $i$ indicates the model used for the first or second analysis.
+The different components of the total \PDF are described in detail below.
+
+The dataset is divided into seven bins of \qsq.
+ There are six separate bins in the full \qsq range, detailed in Table~\ref{tbl:qsqbins}.
+\begin{table}
+\centering
+\caption[ The \qsq binning scheme used in both angular analyses. ]
+{ The \qsq binning scheme used in both angular analyses. 
+The binning is analogous to the binning used in Ref~\cite{PhysRevLett.103.171801} including
+ the  \qsq region of 1 to 6 \gevgevcccc .~\label{tbl:qsqbins} }
+\begin{tabular}{|c|c|}
+\hline
+lower limit (\gevgevcccc)  & upper limit (\gevgevcccc) \\
+\hline
+0.1 & 2 \\
+2 & 4.3 \\
+4.3 & 8.68 \\
+10.09 & 12.9 \\
+14.18 & 16 \\
+16 & 19 \\
+\hline
+1.0 & 6.0 \\
+\hline
+\end{tabular}
+\end{table}
+The binning is analogous to the binning used in Ref~\cite{PhysRevLett.103.171801} along with the
+ region from $1 < \qsq < 6 \gevgevcccc $, which is a theoretically clean region where the observables are easily calculable.
+The binning is chosen such that there is a bin below and above the point where \AFB is
+ predicted to change sign in the Standard Model, and also with boundaries to avoid the \ccbar resonances.
+
+\subsection{Mass model}
+\label{sec:kstmm:massmodel}
+
+Two different mass models were used to parametrise the \Bd signal invariant mass distribution.
+The signal invariant mass model used to parametrise the \Bd invariant mass distribution in the first angular analysis was a double Gaussian function,
+\begin{align}
+\label{eq:totpdf}
+S_{(1)}\left( \mkpimm ; \sigma_1, \sigma_2, \alpha, n \right) = & \, f \times G\left(  \mkpimm  ; m_B , \sigma_1 \right) \nonumber\\
+& + \left(1-f\right) \times G\left(  \mkpimm ; m_B , \sigma_2\right) \, ,
+\end{align}
+where $f$ is the fraction of signal between each component and $\sigma_{1,2}$ are the different widths of each Gaussian component.
+The signal mass model for the second angular analysis was an empirical model consisting of two Crystal Ball functions.
+The Crystal Ball was a function developed to model the radiative 
+tail from the \bbbar resonances~\cite{Skwarnicki:1986xj}.
+It consists of a Gaussian distribution with an 
+exponential tail and is expressed for a given mass ( \mkpimm ) as
+\begin{equation}
+\CB \left(  \mkpimm ; \mB , \sigma, \alpha, n \right) = N
+\begin{cases}
+  \exp{\left(\frac{-(\mkpimm - \mB )^2 }{2\sigma^2}\right)} 
+ & \text{if} \,\, \mkpimm >  \alpha  \\
+ \frac{\left(\frac{n}{\alpha^2}\right)^n}{\frac{\left(\mkpimm-\mB \right)}{\sigma} + \frac{n}{\alpha} - \alpha }
+ & \text{if} \,\, \mkpimm\leq  \alpha
+\end{cases}
+\end{equation}
+where $N$ is the signal normalisation, \mB is the nominal B mass, $\sigma$ is the Gaussian width and $n$ and $\alpha$ are the tail parameters.
+Here the Crystal Ball function is used as an empirical formula to describe tails in the \Bd mass spectrum from resolution effects.
+The parameters for the \Bd mass signal shape are assumed to be equivalent for both Crystal Ball functions except for the widths,
+\begin{align}
+S_{(2)}\left( \mkpimm ; \sigma_1, \sigma_2, \alpha, n \right) = & 
+\, f \, \CB\left(  \mkpimm  ; m_B , \sigma_1, \alpha, n \right) \nonumber\\
+& + \left(1-f\right) \times \CB\left(  \mkpimm ; m_B , \sigma_2, a, n \right) \ .
+\end{align}
+
+The shape of the signal mass model for both analyses is taken from fits to the \BdToJpsiKstar invariant mass spectrum. 
+Due to the high statistics of \BdToJpsiKstar in the data, it is necessary to include an 
+ additional contribution from the suppressed \BsToJpsiKstar mode.
+The decay \BsToJpsiKstar is suppressed by a factor of \fd\Vtd/\Vts\fs compared to \BdToJpsiKstar.
+The model used for the \BsToJpsiKstar is identical to the model for the \BdToJpsiKstar except for the central 
+mass value and shares all of it's parameters with the \BdToJpsiKstar model. 
+The only remaining free parameter is the relative normalisation between the two contributions.
+There is a relative factor
+\begin{align}
+\frac{n_{\Bd}}{n_{\Bs}} =  0.007\pm0.002 \, ,
+\end{align}
+which is applied as a Gaussian constraint on the overall size of the \BsToJpsiKstar contribution.
+
+The model for the background contribution to the \mkpimm spectrum for both analyses is the same. This is an exponential function,
+\begin{align}
+B_{(1,2)}\left(\mkpimm;\lambda\right) = N_B \exp{\left(-\lambda\mkpimm\right)} \, ,
+\end{align}
+where $\lambda$ is the decay constant for the exponential and $N_B$ is the normalisation of the background \PDF.
+
+\subsection{Angular model}
+\label{sec:kstmm:angularmodel}
+
+The signal angular model for each of the analyses is a simplification of the full angular distribution for \BdToKstll 
+as described in Sec.~\ref{sec:fullangdist}.
+The angular distribution is integrated over one bin of \psq and integrated over each of the six bins of \qsq.
+The signal model used in the 0.38\invfb angular analysis to measure \AFB and \FL is 
+%a function of the angles \ctl and \ctk and integrated over $\phi$.% containing \AFB and \FL. 
+%Integrating Eq.~\ref{eq:theo5d} over \psq and \varphi gives
+\begin{align}
+S_{(1)}(\ctl,\ctk) = & \frac{9}{16}   \Bigg( 2 \FL \ctksq ( 1 - \ctlsq )   \nonumber\\ 
+& + \frac{1}{2} ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \nonumber\\
+& +  \frac{4}{3} \AFB ( 1 - \ctksq ) \ctl   \Bigg) . 
+\end{align}
+The angular distribution for the 1.0\invfb angular analysis was extended to include angular observables dependent on \varphi. 
+The distribution was simplified using the transformation described in Sec.~\ref{sec:fullangdist} and~\cite{Ksteepubnote}.
+The analysis uses two parameterisations  of the angular distribution.
+%, the first of which contains the regular angular observables from~\cite{AltmannshoferBall,Kruger:2005ep}.
+The angular distribution for \AFB, \FL, \OS3 and \OS9 is given by
+\begin{align}
+\label{eq:theo4doriginal}
+S_{(2a)}(\ctl,\ctk,\phiprime) =   \frac{9}{16\pi}  & \Bigg(  2 \FL \ctksq ( 1 - \ctlsq )  \nonumber \\ 
+&  + \frac{1}{2} ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \nonumber \\
+&  + \OS3 ( 1 - \ctksq ) (  1 - \ctlsq ) \cos2\phiprime  \nonumber \\
+&  +  \frac{4}{3} \AFB ( 1 - \ctksq ) \ctl  \nonumber \\ 
+&  + \OS9 ( 1 - \ctksq ) ( 1 - \ctlsq) \sin2\phiprime  \Bigg) . 
+\end{align}
+The re-parametrised angular distribution contains the transverse angular observables (\ATRe, \AT2, \ATIm) as described in Sec.~\ref{sec:kstmm:obs},
+\begin{align}
+\label{eq:theo4dreparam}
+S_{(2b)}(\ctl,\ctk,\phiprime) =  \frac{9}{16\pi}  & \Bigg(  2 \FL \ctksq ( 1 - \ctlsq )  \nonumber \\ 
+&  + \frac{1}{2} ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \nonumber \\
+&  + \frac{1}{2} ( 1 - \FL ) \AT2 ( 1 - \ctksq ) (  1 - \ctlsq ) \cos2\phiprime  \nonumber \\
+& +  \frac{4}{3}  ( 1 - \FL ) \ATRe ( 1 - \ctksq ) \ctl  \nonumber \\ 
+& +  ( 1 - \FL ) \ATIm ( 1 - \ctksq ) ( 1 - \ctlsq) \sin2\phiprime  \Bigg) . 
+\end{align}
+The angular distribution used to measure \OA9 uses the CP anti-symmetric definition of \varphi where the sign changes
+for \Bd and \Bdb decays as given in Sec~\ref{sec:kstmm:obs}.
+The signal angular distribution is a function of \phiprimecp,
+\begin{align}
+\label{eq:theo4dphi}
+S_{(2c)}(\ctl,\ctk,\phiprimecp) =   \frac{9}{16\pi}  & \Bigg(  2 \FL \ctksq ( 1 - \ctlsq )  \nonumber \\ 
+&  + \frac{1}{2} ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \nonumber \\
+&  + \OA3 ( 1 - \ctksq ) (  1 - \ctlsq ) \cos2\phiprimecp  \nonumber \\
+&  +  \frac{4}{3} \AFB ( 1 - \ctksq ) \ctl  \nonumber \\ 
+&  + \OA9 ( 1 - \ctksq ) ( 1 - \ctlsq) \sin2\phiprimecp  \Bigg) . 
+\end{align}
+
+The model for the background in each of the angles is equivalent for both angular analyses.
+The background \PDF is an $n^{\text{th}}$ order Chebychev polynomial of the first kind for each angle,
+\begin{align}
+T_{n}(x) = \cos\left(n\arccos(x)\right) \, .
+\end{align}
+The total background angular \PDF is factorised into each of the angles,
+\begin{align}
+B(\mkpimm) = P`^{bkg}_{n}(\ctl, \ctk, \phiprime) = P_{n}^{L}(\ctl) \times P_{n}^{K}(\ctk) \times P_{n}^{P}\phiprime) \, .
+\end{align}
+The assumption that the background angular distribution factorises was tested using the point-to-point dissimilarity test~\cite{Williams:2010vh}.
+The probability of the test statistic having a value less than the test statistic of the data was 25\%.
+This value is entirely compatible with the assumption that the background factorises into the three angles.
+
+\subsection{Result extraction}
+\label{sec:kstmm:resextraction}
+
+The signal \PDF is fitted to the data by performing an unbinned maximum-log-likelihood fit to the data,
+minimising
+\begin{align}
+ - \log \mathcal{L} = \sum_{i}^{N}  \omega_i F(\mkpimm^i, \ctl^i, \ctk^i, \phi^i,  \vec{p} , \vec{O} ) ,
+\end{align}
+where $F$ is the total \PDF described in Eq.~\ref{eq:totpdf}. % which in terms of the \kpimm invariant mass and angles of each of the candidates.
+The set of parameters for the signal and background mass models are $\vec{p}$, while $\vec{O}$ is the set of angular observables.
+Each of the data candidates is weighted for acceptance as described in Section~\ref{sec:kstmm:ac}.
+These weights distort the shape of the likelihood such that the errors extracted from the standard NLL minimisation are not 
+guaranteed to be the true errors.
+In each angular analysis, two different techniques were used to extract the likelihood minima and a better estimate of the error from the likelihood function.
+In the 0.38\invfb analysis, the profile likelihood was calculated and the error determined from the two-dimensional 68\% confidence interval in both \AFB and \FL.
+For the 1.0\invfb analysis, the errors were extracted in a Frequentist manner using the Feldman-Cousins (FC) technique~\cite{PhysRevD.57.3873}.
+
+The FC technique maps out the likelihood for an observable, allowing the size of the confidence intervals for a given observable to be calculated. 
+For an observable of interest in a given set of parameters, the ratio between the likelihood calculated with all parameters free $(\mathcal{L}_0)$ and the likelihood calculated with the observable fixed is calculated $(\mathcal{L}_1)$.
+The ratio between these likelihood ($R_{data}$) is obtained for the result obtained from data, and for a large ensemble of toy datasets ($R_i$).
+The fraction of $R_i < R_{data}$ ($f_R$) is proportional to the probability of the data result being the most optimum solution in the phase space of the parameters.
+This fraction is calculated for a range of values for the observable and the 68\% confidence limits on the observable are calculated from the points where the $f_R<0.68$.
+
+The results of the angular fits along with the calculated confidence limits are shown in Section~\ref{sec:kstmm:res}.
+

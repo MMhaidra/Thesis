@@ -1,245 +1,1238 @@
 <html>
 <head>
+<meta http-equiv='content-type' content='text/html; charset=utf8'>
 <style>
 <!--
 body {width:auto;padding:5;margin:5;}
 .error {font-weight:bold;color:#f00;font-style:italic;}
-.word1,.word2,.word3 {color: #009;}
-.word2 {font-weight: 700;}
-.word3 {font-style: italic;}
-.command {color: #c00;}
-.exclcommand {color: #f99;}
+.word,.hword,.oword,.altwd {border-left: 1px solid #CDF; border-bottom: 1px solid #CDF;}
+.word {color: #009}
+.hword {color: #009; font-weight: 700;}
+.oword {color: #009; font-style: italic;}
+.altwd {color: #00c; font-style: oblique;}
+.cmd {color: #c00;}
+.exclcmd {color: #f99;}
 .option {color: #cc0;}
-.grouping, .document {color: #900; font-weight:bold;}
+.optparm {color: #c90;}
+.envir, .document {color: #900; font-weight:bold;}
+.math {color: #0c0;}
 .mathgroup {color: #090;}
 .exclmath {color: #6c6;}
 .ignore {color: #999;}
-.exclgroup {color:#c66;}
+.exclenv {color:#c66;}
 .tc {color: #999; font-weight:bold;}
 .comment {color: #999; font-style: italic;}
 .state {color: #990; font-size: 70%;}
-.sumcount {color: #999; font-size: 80%;}
-.fileinclude {color: #696; font-weight:bold;}
-dl.count {background: #cfc; color: 009;}
-dl.count dt.header {font-weight: bold; font-style: italic; float: none;}
-dl.count dt {clear: both; float: left; margin-right: .5em;}
-dl.count dd {font-weight: bold;}
-dl.count dd.briefcount {font-weight: 700; clear: both; font-size:80%; font-weight:normal; margin-left:8pt;}
+.cumsum {color: #999; font-size: 80%;}
+.fileinc {color: #696; font-weight:bold;}
 .warning {color: #c00; font-weight: 700;}
-.parse, .count, .stylehelp, .filegroup {border: solid 1px #999; margin: 0pt; padding: 4pt;}
-.parse {font-size: 80%; background: #eef;}
-.parse {border-bottom:none;}
-.stylehelp {font-size: 80%; background: #ffc; margin-bottom: 8pt;}
-.filegroup {background: #efe; margin-bottom: 8pt;}
+
+div.filegroup, div.parse, div.stylehelp, div.count, div.sumcount, div.error {
+   border: solid 1px #999; margin: 4pt 0pt; padding: 4pt;
+}
+div.stylehelp {font-size: 80%; background: #fffff0; margin-bottom: 16pt;}
+div.filegroup {background: #dfd; margin-bottom: 16pt;}
+div.count {background: #ffe;}
+div.sumcount {background: #cec;}
+div.error {background: #fcc;}
+.parse {font-size: 80%; background: #f8fff8; border-bottom:none;}
+
+ul.count {list-style-type: none; margin: 4pt 0pt; padding: 0pt;}
+.count li.header {font-weight: bold; font-style: italic;}
+.subcount li.header {font-weight: normal; font-style: italic;}
+.subcount li {margin-left: 16pt; font-size: 80%;}
+.fielddesc {font-style: italic;}
+.nb {color: #900;}
+
+table.stat {border:2px solid #339; margin:0 0 8pt 0; background:#666; border-collapse:collapse;}
+table.stat tr {border:1px solid #CCC;}
+table.stat th, table.stat td {padding:1pt 4pt;}
+table.stat col {padding:4pt;}
+table.stat thead {background: #CCF;}
+table.stat tbody {border:1px solid #333;}
+table.stat tbody.sumstat {background:#FFC;}
+table.stat tbody.langstat {background:#FEE;}
+table.stat tbody.wordstat {background:#EEF;}
+table.stat tbody.macrostat {background:#EFE;}
+table.stat .sum {font-weight:bold; font-style:italic;}
 -->
 </style>
 </head>
+
 <body>
+
 <h1>LaTeX word count</h1>
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter1/introduction.tex</dt>
-<dt>Words in text: </dt><dd>286</dd>
-<dt>Words in headers: </dt><dd>1</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>1</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>0</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter1/introduction.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 828</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter2/sm.tex</dt>
-<dt>Words in text: </dt><dd>3464</dd>
-<dt>Words in headers: </dt><dd>40</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>13</dd>
-<dt>Number of floats: </dt><dd>3</dd>
-<dt>Number of math inlines: </dt><dd>180</dd>
-<dt>Number of math displayed: </dt><dd>48</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter1/quotes.tex</li>
+<li>Encoding: utf8</li>
+<li>Words in text: 604</li>
+<li>Words in headers: 0</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 0</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter3/fcnc.tex</dt>
-<dt>Words in text: </dt><dd>2713</dd>
-<dt>Words in headers: </dt><dd>9</dd>
-<dt>Words in float captions: </dt><dd>19</dd>
-<dt>Number of headers: </dt><dd>8</dd>
-<dt>Number of floats: </dt><dd>6</dd>
-<dt>Number of math inlines: </dt><dd>188</dd>
-<dt>Number of math displayed: </dt><dd>17</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter2/fcncs.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 590</li>
+<li>Words in headers: 4</li>
+<li>Words outside text (captions, etc.): 19</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 4</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter4/detector.tex</dt>
-<dt>Words in text: </dt><dd>7538</dd>
-<dt>Words in headers: </dt><dd>26</dd>
-<dt>Words in float captions: </dt><dd>213</dd>
-<dt>Number of headers: </dt><dd>16</dd>
-<dt>Number of floats: </dt><dd>16</dd>
-<dt>Number of math inlines: </dt><dd>217</dd>
-<dt>Number of math displayed: </dt><dd>8</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter2/formalism.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 423</li>
+<li>Words in headers: 7</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 1</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>153+5+0 (1/0/0/0) Chapter: The formalism of particle physics</li>
+  <li>270+2+0 (1/1/0/1) Section: Experimental results</li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter5/analysis1.tex</dt>
-<dt>Words in text: </dt><dd>3021</dd>
-<dt>Words in headers: </dt><dd>7</dd>
-<dt>Words in float captions: </dt><dd>537</dd>
-<dt>Number of headers: </dt><dd>10</dd>
-<dt>Number of floats: </dt><dd>16</dd>
-<dt>Number of math inlines: </dt><dd>226</dd>
-<dt>Number of math displayed: </dt><dd>13</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter2/standardmodel.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1515</li>
+<li>Words in headers: 13</li>
+<li>Words outside text (captions, etc.): 6</li>
+<li>Number of headers: 6</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 46</li>
+<li>Number of math displayed: 37</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>245+3+6 (1/1/3/2) Section:&nbsp; The Standard Model </li>
+  <li>234+1+0 (1/0/8/8) Subsection: Electromagnetism</li>
+  <li>492+4+0 (2/0/13/15) Subsection: Electroweak sector</li>
+  <li>166+3+0 (1/0/7/6) Subsection: The flavour sector</li>
+  <li>378+2+0 (1/0/15/6) Subsection:&nbsp; Fermion masses: $\mathcal{L}_{Yukawa}$	</li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter5/table_COMBINED.tex</dt>
-<dt>Words in text: </dt><dd>0</dd>
-<dt>Words in headers: </dt><dd>0</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>0</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>0</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/intro.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 629</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 7</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 3</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>121+1+0 (1/0/0/0) Section: Introduction</li>
+  <li>508+0+7 (1/3/6/0) Subsection: \cern</li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter5/trigger_list.tex</dt>
-<dt>Words in text: </dt><dd>45</dd>
-<dt>Words in headers: </dt><dd>0</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>1</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>3</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/lhcbdetector.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 19</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter6/analysis2.tex</dt>
-<dt>Words in text: </dt><dd>5269</dd>
-<dt>Words in headers: </dt><dd>15</dd>
-<dt>Words in float captions: </dt><dd>166</dd>
-<dt>Number of headers: </dt><dd>20</dd>
-<dt>Number of floats: </dt><dd>31</dd>
-<dt>Number of math inlines: </dt><dd>244</dd>
-<dt>Number of math displayed: </dt><dd>12</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/lhcb.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 240</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 58</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 4</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: chapter7/conclusion.tex</dt>
-<dt>Words in text: </dt><dd>217</dd>
-<dt>Words in headers: </dt><dd>1</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>1</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>14</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/performance.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 283</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: backmatter/acronyms.tex</dt>
-<dt>Words in text: </dt><dd>347</dd>
-<dt>Words in headers: </dt><dd>3</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>1</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>0</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/software.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1277</li>
+<li>Words in headers: 11</li>
+<li>Words outside text (captions, etc.): 126</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 6</li>
+<li>Number of math inlines: 8</li>
+<li>Number of math displayed: 3</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>0+2+0 (1/0/0/0) Section: The \lhcb software </li>
+  <li>118+3+0 (1/0/0/0) Subsection: The LHCb software</li>
+  <li>295+4+0 (1/0/1/0) Subsection: Simulation of the \lhcb data</li>
+  <li>864+2+126 (1/6/7/3) Subsection: Data-simulation agreement</li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: backmatter/appendix.tex</dt>
-<dt>Words in text: </dt><dd>632</dd>
-<dt>Words in headers: </dt><dd>10</dd>
-<dt>Words in float captions: </dt><dd>10</dd>
-<dt>Number of headers: </dt><dd>2</dd>
-<dt>Number of floats: </dt><dd>6</dd>
-<dt>Number of math inlines: </dt><dd>32</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/subdetectors.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1413</li>
+<li>Words in headers: 9</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 5</li>
+<li>Number of math inlines: 18</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>477+2+0 (1/1/8/0) Subsection: Tracking system</li>
+  <li>936+7+0 (3/4/10/0) Subsection: Particle identification </li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: frontmatter/front.tex</dt>
-<dt>Words in text: </dt><dd>241</dd>
-<dt>Words in headers: </dt><dd>3</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>3</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>13</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/triggerdev.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1908</li>
+<li>Words in headers: 12</li>
+<li>Words outside text (captions, etc.): 25</li>
+<li>Number of headers: 5</li>
+<li>Number of floats/tables/figures: 6</li>
+<li>Number of math inlines: 14</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>0+5+0 (1/0/0/0) Section: Development of the trigger for \BdToKstmm</li>
+  <li>661+1+0 (1/0/5/0) Subsection: Introduction</li>
+  <li>258+1+0 (1/1/1/0) Subsection: Datasets</li>
+  <li>663+2+11 (1/1/6/0) Subsection: Trigger configuration</li>
+  <li>326+3+14 (1/4/2/0) Subsection: Results and Discussion</li>
+</span>
+</ul>
+</div>
 </div>
 
 
 <div class='filegroup'>
-<dl class='count'>
-<dt class='header'>FILE: frontmatter/title.tex</dt>
-<dt>Words in text: </dt><dd>0</dd>
-<dt>Words in headers: </dt><dd>0</dd>
-<dt>Words in float captions: </dt><dd>0</dd>
-<dt>Number of headers: </dt><dd>0</dd>
-<dt>Number of floats: </dt><dd>0</dd>
-<dt>Number of math inlines: </dt><dd>0</dd>
-<dt>Number of math displayed: </dt><dd>0</dd>
-</dl>
-
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter3/trigger.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 562</li>
+<li>Words in headers: 8</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>172+2+0 (1/1/2/0) Section: The \lhcb trigger</li>
+  <li>121+3+0 (1/0/0/0) Subsection: The hardware trigger</li>
+  <li>269+3+0 (1/0/0/0) Subsection: The software trigger</li>
+</span>
+</ul>
+</div>
 </div>
 
-<h2>Total word count</h2><dl class='count'>
-<dt class='header'>TOTAL COUNT</dt>
-<dt>Files: </dt><dd>13</dd>
-<dt>Words in text: </dt><dd>23773</dd>
-<dt>Words in headers: </dt><dd>115</dd>
-<dt>Words in float captions: </dt><dd>945</dd>
-<dt>Number of headers: </dt><dd>76</dd>
-<dt>Number of floats: </dt><dd>78</dd>
-<dt>Number of math inlines: </dt><dd>1117</dd>
-<dt>Number of math displayed: </dt><dd>98</dd>
-</dl>
-</body></html>
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/amplitudes.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 392</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 15</li>
+<li>Number of math displayed: 9</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>68+1+0 (1/0/0/1) Section: Amplitudes</li>
+  <li>246+0+0 (1/0/12/7) Subsection: \BdToKstll</li>
+  <li>78+1+0 (1/0/3/1) Subsection: \BdToKpill amplitudes</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/angdists.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 72</li>
+<li>Words in headers: 5</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 4</li>
+<li>Number of math displayed: 3</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/angular_distribution.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 175</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 21</li>
+<li>Number of math displayed: 5</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/basis.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 262</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 20</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 14</li>
+<li>Number of math displayed: 7</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/kpi_states.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 531</li>
+<li>Words in headers: 22</li>
+<li>Words outside text (captions, etc.): 57</li>
+<li>Number of headers: 5</li>
+<li>Number of floats/tables/figures: 3</li>
+<li>Number of math inlines: 3</li>
+<li>Number of math displayed: 4</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>140+6+18 (1/1/3/0) Section: The angular distribution for higher \kpi states</li>
+  <li>54+2+0 (1/0/0/0) Subsection: propagator functions</li>
+  <li>173+1+39 (1/2/0/0) Subsection: \psq spectrum</li>
+  <li>2+8+0 (1/0/0/0) Subsection: Angular distribution of the S,P and D-wave</li>
+  <li>162+5+0 (1/0/0/4) Subsection: Angular observables for the D-wave </li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/kstmmtheory.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 46</li>
+<li>Words in headers: 3</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>0+2+0 (1/0/0/0) Chapter: The \BdToKstll decay	</li>
+  <li>46+1+0 (1/0/2/0) Section: Summary</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/matrix.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 0</li>
+<li>Words in headers: 0</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 0</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter4/observables.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 458</li>
+<li>Words in headers: 14</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 5</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 16</li>
+<li>Number of math displayed: 8</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>130+2+0 (1/0/0/0) Section: Angular observables</li>
+  <li>150+2+0 (1/0/7/5) Subsection: P-wave observables</li>
+  <li>84+2+0 (1/0/4/2) Subsection: Transverse observables</li>
+  <li>40+3+0 (1/0/3/1) Subsection: \CP asymmetric angular observables</li>
+  <li>54+5+0 (1/0/2/0) Subsection: Relation to the Wilson coefficients</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/acceptance_correction.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 2024</li>
+<li>Words in headers: 25</li>
+<li>Words outside text (captions, etc.): 97</li>
+<li>Number of headers: 6</li>
+<li>Number of floats/tables/figures: 12</li>
+<li>Number of math inlines: 41</li>
+<li>Number of math displayed: 12</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>198+2+0 (1/0/1/1) Section: Acceptance correction</li>
+  <li>274+5+20 (1/2/0/0) Subsection: Total acceptance effect on simulation</li>
+  <li>560+6+45 (1/3/24/3) Subsection: A full 3D acceptance correction algorithm</li>
+  <li>771+8+0 (2/5/14/7) Subsection: A factorised acceptance correction algorithm</li>
+  <li>221+4+32 (1/2/2/1) Subsection: Re-weighted phase space distributions</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/angular_analysis.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1027</li>
+<li>Words in headers: 8</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 24</li>
+<li>Number of math displayed: 13</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>190+2+0 (1/1/5/1) Section: Angular analysis</li>
+  <li>311+2+0 (1/0/8/5) Subsection: Mass model</li>
+  <li>237+2+0 (1/0/1/6) Subsection: Angular model</li>
+  <li>289+2+0 (1/0/10/1) Subsection: Result extraction</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/data.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 687</li>
+<li>Words in headers: 14</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 8</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 3</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>84+2+0 (1/0/0/0) Section: Data samples</li>
+  <li>168+7+0 (3/0/2/0) Subsection: Data</li>
+  <li>435+5+0 (4/2/1/0) Subsection: Simulation</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/intro.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 280</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/kstmm.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 507</li>
+<li>Words in headers: 5</li>
+<li>Words outside text (captions, etc.): 35</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 1</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>49+4+0 (1/0/0/0) Chapter: The angular analysis of \BdToKstmm</li>
+  <li>458+1+35 (1/1/1/0) Section: Conclusions</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/results.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 257</li>
+<li>Words in headers: 12</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 9</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>43+1+0 (1/0/0/0) Section: Results</li>
+  <li>153+6+0 (1/3/5/0) Subsection: Angular analysis of 0.38\invfb of data</li>
+  <li>61+5+0 (1/6/1/0) Subsection: Analysis of 1.0\invfb of data</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/selection.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1022</li>
+<li>Words in headers: 6</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 3</li>
+<li>Number of math inlines: 23</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/systematics.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 1436</li>
+<li>Words in headers: 32</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 11</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 12</li>
+<li>Number of math displayed: 1</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>139+2+0 (1/0/0/0) Section: Systematic uncertainties</li>
+  <li>582+12+0 (4/0/4/0) Subsection: Systematic contributions for the 0.38\invfb analysis</li>
+  <li>715+18+0 (6/1/8/1) Subsection: Systematic contributions in the 1.0\invfb analysis</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter5/theoint.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 108</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 20</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/analysis.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 284</li>
+<li>Words in headers: 11</li>
+<li>Words outside text (captions, etc.): 123</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 5</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/intro.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 335</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 7</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/isobar.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 290</li>
+<li>Words in headers: 2</li>
+<li>Words outside text (captions, etc.): 116</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 3</li>
+<li>Number of math inlines: 11</li>
+<li>Number of math displayed: 3</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/measurement.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 517</li>
+<li>Words in headers: 4</li>
+<li>Words outside text (captions, etc.): 308</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 6</li>
+<li>Number of math inlines: 4</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/observables.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 351</li>
+<li>Words in headers: 6</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 10</li>
+<li>Number of math displayed: 12</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/swave.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 250</li>
+<li>Words in headers: 11</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 1</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>66+10+0 (1/0/0/0) Chapter: The effect of an S-wave on the angular analysis of \BdToKpill</li>
+  <li>184+1+0 (1/0/1/0) Section: Conclusions</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/theory.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 634</li>
+<li>Words in headers: 15</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 5</li>
+<li>Number of floats/tables/figures: 4</li>
+<li>Number of math inlines: 37</li>
+<li>Number of math displayed: 14</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>116+5+0 (1/0/5/2) Section: Theoretical formalism of the \psq spectrum</li>
+  <li>71+3+0 (1/1/5/2) Subsection: Phase space factors</li>
+  <li>211+2+0 (1/1/16/7) Subsection: Propagator functions</li>
+  <li>124+2+0 (1/0/8/3) Subsection: Angular coefficients</li>
+  <li>112+3+0 (1/2/3/0) Subsection: The \psq spectrum for \BdToKpill</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter6/toys.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 563</li>
+<li>Words in headers: 6</li>
+<li>Words outside text (captions, etc.): 20</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 7</li>
+<li>Number of math displayed: 1</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/acceptance.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 644</li>
+<li>Words in headers: 8</li>
+<li>Words outside text (captions, etc.): 58</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 6</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 3</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>223+2+0 (1/1/3/1) Section: Acceptance correction</li>
+  <li>349+5+58 (1/4/1/2) Subsection: Efficiency in terms of \psq, \qsq and \ctk</li>
+  <li>72+1+0 (1/1/2/0) Subsection: Validation</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/data.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 135</li>
+<li>Words in headers: 4</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 2</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 1</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>0+3+0 (1/0/0/0) Section: Selection of \BdToKpimm candidates</li>
+  <li>135+1+0 (1/0/1/0) Subsection: Data</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/discussion.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 261</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 1</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/intro.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 234</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/method.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 725</li>
+<li>Words in headers: 11</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 2</li>
+<li>Number of math displayed: 2</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>665+9+0 (3/2/2/0) Subsection: Fit method</li>
+  <li>60+2+0 (1/0/0/2) Subsection: Determination of \FS</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/model.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 460</li>
+<li>Words in headers: 8</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 21</li>
+<li>Number of math displayed: 7</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>0+2+0 (1/0/0/0) Section: Fit for \FS</li>
+  <li>460+6+0 (3/0/21/7) Subsection: Fit model</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/results.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 163</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 35</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 4</li>
+<li>Number of math inlines: 1</li>
+<li>Number of math displayed: 1</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/selection.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 578</li>
+<li>Words in headers: 7</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 4</li>
+<li>Number of floats/tables/figures: 3</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 0</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>169+1+0 (1/0/4/0) Subsection: Selection</li>
+  <li>409+6+0 (3/3/2/0) Subsection: Peaking backgrounds</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/swave.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 12</li>
+<li>Words in headers: 5</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: chapter7/systematics.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 704</li>
+<li>Words in headers: 17</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 6</li>
+<li>Number of floats/tables/figures: 2</li>
+<li>Number of math inlines: 6</li>
+<li>Number of math displayed: 2</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>658+13+0 (5/1/6/2) Section: Systematic uncertainties</li>
+  <li>46+4+0 (1/1/0/0) Subsection: Summary of systematic uncertainties</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: backmatter/acronyms.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 346</li>
+<li>Words in headers: 3</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: backmatter/appendix.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 0</li>
+<li>Words in headers: 0</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 0</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: backmatter/conclusions.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 36</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: backmatter/summary.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 855</li>
+<li>Words in headers: 1</li>
+<li>Words outside text (captions, etc.): 33</li>
+<li>Number of headers: 1</li>
+<li>Number of floats/tables/figures: 1</li>
+<li>Number of math inlines: 12</li>
+<li>Number of math displayed: 1</li>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: frontmatter/front.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 743</li>
+<li>Words in headers: 3</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 3</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 5</li>
+<li>Number of math displayed: 1</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>286+1+0 (1/0/0/0) Chapter: Declaration</li>
+  <li>180+1+0 (1/0/5/1) Chapter: Abstract</li>
+  <li>277+1+0 (1/0/0/0) Chapter: Acknowledgements</li>
+</span>
+</ul>
+</div>
+</div>
+
+
+<div class='filegroup'>
+<div class='count'>
+<ul class='count'>
+<li class='header'>File: frontmatter/title.tex</li>
+<li>Encoding: ascii</li>
+<li>Words in text: 0</li>
+<li>Words in headers: 0</li>
+<li>Words outside text (captions, etc.): 0</li>
+<li>Number of headers: 0</li>
+<li>Number of floats/tables/figures: 0</li>
+<li>Number of math inlines: 0</li>
+<li>Number of math displayed: 0</li>
+</ul>
+</div>
+</div>
+
+<h2>Total word count</h2><div class='sumcount'>
+<ul class='count'>
+<li class='header'>Total</li>
+<li>Words in text: 28695</li>
+<li>Words in headers: 352</li>
+<li>Words outside text (captions, etc.): 1163</li>
+<li>Number of headers: 135</li>
+<li>Number of floats/tables/figures: 96</li>
+<li>Number of math inlines: 438</li>
+<li>Number of math displayed: 154</li>
+<li>Files: 54</li>
+<li>Subcounts:</li>
+<span class='subcount'>
+<li class='fielddesc'>&nbsp; text+headers+captions (#headers/#floats/#inlines/#displayed)</li>
+  <li>828+1+0 (1/0/2/0) File(s) total: chapter1/introduction.tex</li>
+  <li>604+0+0 (0/0/0/0) File(s) total: chapter1/quotes.tex</li>
+  <li>590+4+19 (1/1/6/4) File(s) total: chapter2/fcncs.tex</li>
+  <li>423+7+0 (2/1/0/1) File(s) total: chapter2/formalism.tex</li>
+  <li>1515+13+6 (6/1/46/37) File(s) total: chapter2/standardmodel.tex</li>
+  <li>629+1+7 (2/3/6/0) File(s) total: chapter3/intro.tex</li>
+  <li>19+2+0 (1/0/0/0) File(s) total: chapter3/lhcbdetector.tex</li>
+  <li>240+2+58 (1/2/4/0) File(s) total: chapter3/lhcb.tex</li>
+  <li>283+1+0 (1/0/2/0) File(s) total: chapter3/performance.tex</li>
+  <li>1277+11+126 (4/6/8/3) File(s) total: chapter3/software.tex</li>
+  <li>1413+9+0 (4/5/18/0) File(s) total: chapter3/subdetectors.tex</li>
+  <li>1908+12+25 (5/6/14/0) File(s) total: chapter3/triggerdev.tex</li>
+  <li>562+8+0 (3/1/2/0) File(s) total: chapter3/trigger.tex</li>
+  <li>392+2+0 (3/0/15/9) File(s) total: chapter4/amplitudes.tex</li>
+  <li>72+5+0 (1/0/4/3) File(s) total: chapter4/angdists.tex</li>
+  <li>175+2+0 (1/0/21/5) File(s) total: chapter4/angular_distribution.tex</li>
+  <li>262+2+20 (1/1/14/7) File(s) total: chapter4/basis.tex</li>
+  <li>531+22+57 (5/3/3/4) File(s) total: chapter4/kpi_states.tex</li>
+  <li>46+3+0 (2/0/2/0) File(s) total: chapter4/kstmmtheory.tex</li>
+  <li>458+14+0 (5/0/16/8) File(s) total: chapter4/observables.tex</li>
+  <li>2024+25+97 (6/12/41/12) File(s) total: chapter5/acceptance_correction.tex</li>
+  <li>1027+8+0 (4/1/24/13) File(s) total: chapter5/angular_analysis.tex</li>
+  <li>687+14+0 (8/2/3/0) File(s) total: chapter5/data.tex</li>
+  <li>280+1+0 (1/0/0/0) File(s) total: chapter5/intro.tex</li>
+  <li>507+5+35 (2/1/1/0) File(s) total: chapter5/kstmm.tex</li>
+  <li>257+12+0 (3/9/6/0) File(s) total: chapter5/results.tex</li>
+  <li>1022+6+0 (3/3/23/0) File(s) total: chapter5/selection.tex</li>
+  <li>1436+32+0 (11/1/12/1) File(s) total: chapter5/systematics.tex</li>
+  <li>108+1+20 (1/1/2/0) File(s) total: chapter5/theoint.tex</li>
+  <li>284+11+123 (1/2/5/0) File(s) total: chapter6/analysis.tex</li>
+  <li>335+1+0 (1/0/7/0) File(s) total: chapter6/intro.tex</li>
+  <li>290+2+116 (1/3/11/3) File(s) total: chapter6/isobar.tex</li>
+  <li>517+4+308 (1/6/4/0) File(s) total: chapter6/measurement.tex</li>
+  <li>351+6+0 (2/1/10/12) File(s) total: chapter6/observables.tex</li>
+  <li>250+11+0 (2/0/1/0) File(s) total: chapter6/swave.tex</li>
+  <li>634+15+0 (5/4/37/14) File(s) total: chapter6/theory.tex</li>
+  <li>563+6+20 (1/2/7/1) File(s) total: chapter6/toys.tex</li>
+  <li>644+8+58 (3/6/6/3) File(s) total: chapter7/acceptance.tex</li>
+  <li>135+4+0 (2/0/1/0) File(s) total: chapter7/data.tex</li>
+  <li>261+1+0 (1/0/1/0) File(s) total: chapter7/discussion.tex</li>
+  <li>234+1+0 (1/0/0/0) File(s) total: chapter7/intro.tex</li>
+  <li>725+11+0 (4/2/2/2) File(s) total: chapter7/method.tex</li>
+  <li>460+8+0 (4/0/21/7) File(s) total: chapter7/model.tex</li>
+  <li>163+1+35 (1/4/1/1) File(s) total: chapter7/results.tex</li>
+  <li>578+7+0 (4/3/6/0) File(s) total: chapter7/selection.tex</li>
+  <li>12+5+0 (1/0/0/0) File(s) total: chapter7/swave.tex</li>
+  <li>704+17+0 (6/2/6/2) File(s) total: chapter7/systematics.tex</li>
+  <li>346+3+0 (1/0/0/0) File(s) total: backmatter/acronyms.tex</li>
+  <li>36+1+0 (1/0/0/0) File(s) total: backmatter/conclusions.tex</li>
+  <li>855+1+33 (1/1/12/1) File(s) total: backmatter/summary.tex</li>
+  <li>743+3+0 (3/0/5/1) File(s) total: frontmatter/front.tex</li>
+</span>
+</ul>
+</div>
+</body>
+
+</html>

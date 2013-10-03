@@ -1,0 +1,30 @@
+\section{The angular distribution with observables}
+\label{sec:kstmm:angdistswithobs}
+
+The angular distribution of \BdToKstmm including the angular observables as a function of \ctl, \ctk and \phiprime is given by
+\begin{align}
+\label{eq:kstmm:theo5d}
+\frac{1}{\Gamma} \frac{\text{d}^4\Gamma}{\text{d}\qsq\dctk\dctl \text{d}\phiprime} & =   \frac{9}{16\pi}   \Bigg(  \xspace 2 \FL \ctksq ( 1 - \ctlsq )  \nonumber \\ 
+&  \quad \quad \quad  + \frac{1}{2} ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \nonumber \\
+&  \quad \quad \quad  + \frac{1}{2} ( 1 - \FL ) \AT2 ( 1 - \ctksq ) (  1 - \ctlsq ) \cos2\phiprime  \nonumber \\
+&  \quad \quad \quad  +  \frac{4}{3} \AFB ( 1 - \ctksq ) \ctl  \nonumber \\ 
+&  \quad \quad \quad  + \OS{3} ( 1 - \ctksq ) ( 1 - \ctlsq) \sin2\phiprime  \Bigg) . 
+\end{align}
+The two-dimensional angular distribution as a function of \ctl  and \ctk is given by integrating over $\phi$ in Eq.~\ref{eq:kstmm:theo5d}
+\begin{equation}
+\label{eq:kstmm:theo4d}
+\begin{split}
+\frac{1}{\Gamma} \frac{\text{d}^3\Gamma}{\text{d}\qsq\text{d}\ctk \text{d}\ctl} & =   \frac{9}{16} \Bigg( 2 \FL \ctksq ( 1 - \ctlsq )   +\frac{1}{2}  ( 1 - \FL ) ( 1 - \ctksq ) ( 1 + \ctlsq )  \\
+& \quad \ + \frac{4}{3} \AFB ( 1 - \ctksq ) \ctl     \Bigg) 
+\end{split}
+\end{equation}
+and further integration from Equation~\ref{eq:kstmm:theo5d} yields the angular distribution for each of the angles,
+\begin{equation}
+\label{eq:kstmm:theo3d}
+\begin{split}
+\frac{1}{\Gamma} \frac{\text{d}^2\Gamma}{\text{d}\qsq\dctl} &=   \frac{3}{4} \FL ( 1 - \ctlsq )  + \frac{3}{8} ( 1 - \FL ) ( 1 + \ctlsq ) + \AFB \ctl  , \\
+\frac{1}{\Gamma} \frac{\text{d}^2\Gamma}{\text{d}\qsq\dctk}  &=    \frac{3}{2}  \FL \ctksq +  \frac{3}{4} ( 1 - \FL ) ( 1 - \ctksq ) 	, \\
+\frac{1}{\Gamma} \frac{\text{d}^2\Gamma}{\text{d}\qsq\text{d}\phiprime } &=   \FL + \frac{1}{2} ( 1 - \FL ) \AT2  \cos2\phiprime +  \OS{3}  \sin2\phiprime  .
+\end{split}
+\end{equation}
+There is a physical limit on the size of \AFB and \FL given by $ \AFB \leq \frac{3}{4} (1-\FL) $, where if $\FL \to 1$, then the parallel and perpendicular amplitudes must tend to zero, implying $\AFB\to0$.

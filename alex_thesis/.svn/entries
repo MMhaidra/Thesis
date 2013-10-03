@@ -1,14 +1,14 @@
 10
 
 dir
-1688
+2919
 svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires
 svn+ssh://svn.cern.ch/reps/lhcbimperial
 
 
 
-2012-07-16T16:40:08.038845Z
-1680
+2013-09-30T22:24:55.975378Z
+2914
 ashires
 
 
@@ -25,17 +25,26 @@ ashires
 
 
 7c6e8ea0-0a27-4360-9bb0-0d873ab685f0
+
+
+
+
+
+
+
+
+((conflict thesis.log file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.log file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.log none)) (conflict thesis.toc file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.toc file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.toc none)) (conflict thesis.aux file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.aux file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.aux none)) (conflict thesis.out file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.out file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.out none)) (conflict thesis.pdf file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.pdf file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.pdf none)) (conflict thesis.synctex.gz file update deleted edited (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 1688 Theses/ashires/thesis.synctex.gz file) (version svn+ssh://svn.cern.ch/reps/lhcbimperial 4 2919 Theses/ashires/thesis.synctex.gz none)))
 
-main.bib
+exp.bib
 file
 
 
 
 
-2012-07-22T21:50:59.131100Z
-6d7f99517e1d73178a0c29e99e77b4e9
-2012-07-16T16:40:08.038845Z
-1680
+2013-10-03T13:55:53.204136Z
+a77c7df5d799ab8a15e83bf42232a4b0
+2013-09-16T18:54:19.511878Z
+2878
 ashires
 
 
@@ -58,18 +67,18 @@ ashires
 
 
 
-23831
+16849
 
-thesis.log
+theo.bib
 file
 
 
 
 
-2012-07-22T21:50:59.129100Z
-8372bf1250857c6ca2a15c2d3d9edf8e
-2012-07-16T16:40:08.038845Z
-1680
+2013-10-03T13:55:53.207136Z
+da8ec73725423fbe761ba4d68ba6af42
+2013-09-01T09:37:49.711250Z
+2827
 ashires
 
 
@@ -92,217 +101,7 @@ ashires
 
 
 
-58920
-
-thesis.toc
-file
-
-
-
-
-2012-07-22T21:50:59.132100Z
-0989aa4b349a64d9afbe0ec7b2bd0ae2
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5650
-
-mciteplus.sty
-file
-
-
-
-
-2012-07-22T21:50:59.144101Z
-bd0aa2415595a8fbbf5b97bbf02a063a
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-61172
-
-thesis.aux
-file
-
-
-
-
-2012-07-22T21:50:59.144101Z
-0418f3b8114349245cb2097404ce9d7f
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8065
-
-thesis.bbl
-file
-
-
-
-
-2012-07-22T21:50:59.145101Z
-a24e7a23e409fdc9cdc1a22fba916243
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-935
-
-thesis.tex
-file
-
-
-
-
-2012-07-22T21:50:59.146101Z
-2c865b0531faed6fe656e69e3ca9b8c5
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6694
-
-tex
-dir
-
-style
-dir
-
-thesis.blg
-file
-
-
-
-
-2012-07-22T21:50:59.147101Z
-b818bd43af19620dee7d01c567177a8f
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-128
+24320
 
 cite.sty
 file
@@ -338,56 +137,19 @@ ashires
 
 32577
 
-frontmatter
-dir
-
-thesis.out
-file
-
-
-
-
-2012-07-22T21:50:59.150101Z
-39345d5acdc4ff37f1fa8f7e15dc6ed5
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3086
-
 chapter1
 dir
 
-thesis.pdf
+LHCb-PAPER.bib
 file
 
 
 
 
-2012-07-22T21:50:59.151101Z
-9ffe73d13012784a205952cefca156e2
-2012-07-16T16:40:08.038845Z
-1680
+2013-10-03T13:55:53.220137Z
+4e6740f0fc42c15460ca7ab69bb8cedb
+2013-09-26T16:28:25.350161Z
+2905
 ashires
 
 
@@ -410,26 +172,94 @@ ashires
 
 
 
-167032
+54579
+
+lhcbmain.bib
+file
+
+
+
+
+2013-10-03T13:55:53.216137Z
+0b338c3b8c053833a4e916530edf3e05
+2013-09-26T16:28:25.350161Z
+2905
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21661
+
+appendix
+dir
 
 chapter2
+dir
+
+etoolbox.sty
+file
+
+
+
+
+2013-10-03T13:55:53.229137Z
+02561c41bb08b479074b6e76f0b7d639
+2012-11-01T11:20:16.821098Z
+1851
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+41188
+
+chapter3
 dir
 
 texcount
 dir
 
-chapter3
-dir
-
-chapter4
-dir
-
 thesis.synctex.gz
 file
+1688
 
 
-
-
+add
 2012-07-22T21:50:59.153102Z
 b19a6509ffbb9be07d0434c2cb020344
 2012-07-16T16:40:08.038845Z
@@ -443,9 +273,9 @@ has-props
 
 
 
-
-
-
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.synctex.gz
+1688
 
 
 
@@ -458,8 +288,502 @@ has-props
 
 30624
 
+chapter4
+dir
+
 chapter5
 dir
+
+cosmo.bib
+file
+
+
+
+
+2013-10-03T13:55:53.254139Z
+44165c108ae0c36f17db6494907a550e
+2013-09-10T10:22:19.456052Z
+2864
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3520
+
+fc-english.def
+file
+
+
+
+
+2013-10-03T13:55:53.257139Z
+0df4e28cce6eaf9b29ec0d8fd0846273
+2013-09-24T18:19:09.542731Z
+2896
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12457
+
+chapter6
+dir
+
+fmtcount.sty
+file
+
+
+
+
+2013-10-03T13:55:53.263139Z
+3cd931a4d65c1a1c0af8e019b61e6b58
+2012-11-01T11:20:16.821098Z
+1851
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30329
+
+chapter7
+dir
+
+Makefile
+file
+
+
+
+
+2013-10-03T13:55:53.259139Z
+279ec359cf9ed80b1ad9d9ac2a709d61
+2013-09-01T15:59:16.295465Z
+2832
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+902
+
+thesis.log
+file
+1688
+
+
+add
+2012-07-22T21:50:59.129100Z
+8372bf1250857c6ca2a15c2d3d9edf8e
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.log
+1688
+
+
+
+
+
+
+
+
+
+
+58920
+
+mciteplus.sty
+file
+
+
+
+
+2012-07-22T21:50:59.144101Z
+bd0aa2415595a8fbbf5b97bbf02a063a
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+61172
+
+thesis.toc
+file
+1688
+
+
+add
+2012-07-22T21:50:59.132100Z
+0989aa4b349a64d9afbe0ec7b2bd0ae2
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.toc
+1688
+
+
+
+
+
+
+
+
+
+
+5650
+
+LHCb-CONF.bib
+file
+
+
+
+
+2013-10-03T13:55:53.200136Z
+c967e853cddc5ed7a22cdec129ac20ae
+2012-11-30T18:16:06.535555Z
+1909
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+33444
+
+thesis.aux
+file
+1688
+
+
+add
+2012-07-22T21:50:59.144101Z
+0418f3b8114349245cb2097404ce9d7f
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.aux
+1688
+
+
+
+
+
+
+
+
+
+
+8065
+
+thesis.bbl
+file
+
+
+
+
+2013-10-03T13:55:53.210136Z
+05182c90ca302f7e4388a029953494ad
+2013-09-30T22:24:55.975378Z
+2914
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+56491
+
+thesis.tex
+file
+
+
+
+
+2013-10-03T13:55:53.213137Z
+58c9313be7ade1805d906e57a96e24c4
+2013-09-11T13:47:04.440267Z
+2873
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8176
+
+style
+dir
+
+tex
+dir
+
+thesis.out
+file
+1688
+
+
+add
+2012-07-22T21:50:59.150101Z
+39345d5acdc4ff37f1fa8f7e15dc6ed5
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.out
+1688
+
+
+
+
+
+
+
+
+
+
+3086
+
+frontmatter
+dir
+
+thesis.pdf
+file
+1688
+
+
+add
+2012-07-22T21:50:59.151101Z
+9ffe73d13012784a205952cefca156e2
+2012-07-16T16:40:08.038845Z
+1680
+ashires
+
+
+
+
+
+
+
+
+copied
+svn+ssh://svn.cern.ch/reps/lhcbimperial/Theses/ashires/thesis.pdf
+1688
+
+
+
+
+
+
+
+
+
+
+167032
+
+datetime.sty
+file
+
+
+
+
+2013-10-03T13:55:53.253139Z
+1529e88e022b00aad5e7a60286b34b15
+2012-11-01T11:15:34.473170Z
+1850
+ashires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27157
 
 README.txt
 file
@@ -495,46 +819,6 @@ ashires
 
 6
 
-chapter6
-dir
-
 backmatter
 dir
-
-chapter7
-dir
-
-Makefile
-file
-
-
-
-
-2012-07-22T21:50:59.155102Z
-25d9567b46bfc04c93fd36c078a5b261
-2012-07-16T16:40:08.038845Z
-1680
-ashires
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1611
 

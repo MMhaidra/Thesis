@@ -1,0 +1,65 @@
+\section{Angular distribution}
+\label{sec:fullangdist}
+
+Following Ref~\cite{PhysRevD.61.114028}, the angular distribution of \BdToKstll can be written as an explicit function
+of \ctl and $\phi$, 
+\begin{align}
+\frac{\text{d}^5\Gamma}{\text{d}q^2 \text{d}p^2 \text{d}\ctk \text{d}\ctl \text{d}\phi} = & 
+\frac{3}{8} \left( I_1^c + 2I_1^s + (I_2^c + 2I_2^s) \cos2\theta_l  + 2I_3\stlsq\cos2\phi \right. \nonumber \\
+&+ 2\sqrt{2}I_4\sin2\theta_l\cos\phi  + 2\sqrt{2}I_5\stl\cos\phi + 2I_6\ctl \nonumber\\ 
+&+ \left. 2\sqrt{2}I_7\stl\sin\phi  + 2\sqrt{2}I_8\sin2\theta_l\sin\phi + 2\sqrt{2}I_9\stlsq\sin2\phi \frac{}{} \right) \, ,
+\end{align}
+where each of the angular coefficients ($I_i$) are combinations of the helicity amplitudes and contain
+ an implicit dependence on \ctk and the invariant masses, \psq and \qsq.
+
+The nine angular coefficients are expressed as
+\begin{subequations}\begin{align}
+I_1^c &= |\mathcal{A}_{0L}|^2 + |\mathcal{A}_{0R}|^2 + 8\frac{m_l^2}{q^2}\Re(\mathcal{A}_{L0}\mathcal{A}_{R0}^{*}) + 4\frac{m_l^2}{q^2}|\mathcal{A}_t|^2 \frac{}{}   \\
+I_1^s &= \frac{3}{4} ( |\mathcal{A}_{L||}|^2 + |\mathcal{A}_{L\bot}|^2 + (L\to R) )  ( 1 - \frac{4m_l^2}{q^2} ) +  \frac{4m_l^2}{q^2}\Re( \mathcal{A}_{L\bot} \mathcal{A}_{R\bot}  + \mathcal{A}_{R||} \mathcal{A}_{R||} ) )  \frac{}{} \\
+I_2^c &= - \beta_l^2 \left( |\mathcal{A}_{L0}|^2 + |\mathcal{A}_{R0}|^2 \right) \frac{}{} \\
+I_2^s &= \frac{1}{4} \beta_l^2 \left( |\mathcal{A}_{L||}|^2 + |\mathcal{A}_{L\bot}|^2 + |\mathcal{A}_{R||}|^2 + |\mathcal{A}_{R\bot}|^2  \right)  \frac{}{} \\
+I_3 &= \frac{1}{2} \beta_l^2  \left( |\mathcal{A}_{1L\bot}|^2 - |\mathcal{A}_{1L||}|^2 + |\mathcal{A}_{R\bot}|^2 - |\mathcal{A}_{R||}|^2 \right) \frac{}{}  \\
+I_4 &= \frac{1}{\sqrt{2}}   \beta_l^2  \left(  \Re(\mathcal{A}_{L0}\mathcal{A}_{L||}^{*}) + (L\to R) \right) \frac{}{} \\
+I_5 &= \sqrt{2}  \beta_l \left(  \Re(\mathcal{A}_{L0}\mathcal{A}_{L\bot}^{*}) - (L\to R) \right) \frac{}{} \\
+I_6 &= 2   \beta_l \left( \Re(\mathcal{A}_{L||}\mathcal{A}_{L\bot}^{*}) - (L\to R) \right) \frac{}{} \\
+I_7 &= \sqrt{2}  \beta_l \left(  \Im(\mathcal{A}_{L0}\mathcal{A}_{L||}^{*}) - (L\to R) \right) \frac{}{} \\
+I_8 &= \frac{1}{\sqrt{2}}  \beta_l^2 \left(  \Im(\mathcal{A}_{L0}\mathcal{A}_{L\bot}^{*}) + (L\to R) \right) \frac{}{} \\
+I_9 &=  \beta_l^2 \left(  \Im(\mathcal{A}_{L||}\mathcal{A}_{L\bot}^{*}) + (L\to R) \right) , \frac{}{}
+\end{align}\end{subequations}
+where $\mathcal{A}_{H(0,||,\bot,t)}$ are the \Kstarz spin amplitudes for a given handedness, $m_l$ is the lepton mass
+ and $\beta_l = \sqrt{ 1 - 4m_l^2/\qsq}$~\cite{PhysRevD.61.114028}. 
+The lepton mass is assumed to be insignificant, such that $I_{1,2}$ have no $m_l$
+dependence, $\beta_l=1$ and $\mathcal{A}_t$ disappears from the angular distribution.
+
+Neglecting any \CP asymmetry, as measured in Ref.~\cite{LHCb-PAPER-2012-021},
+%and using $\phi = \phi_{sym}$, 
+the \Bd and \Bdb decays can be combined to give 
+\begin{align}
+\frac{\text{d}^5\left[\Gamma_{\Bd} + \Gamma_{\Bdb} \right] }{\text{d}q^2 \text{d}p^2 \text{d}\ctk \text{d}\ctl \text{d}\phi} = \sum_{i=1}^{9} I_i (\ctl,\ctk,\phi) + \bar{I}_i (\ctl,\ctk,\phi) \ .
+\end{align}
+The \CP anti-symmetric angular distribution is given by 
+\begin{align}
+\frac{\text{d}^5\left[\Gamma_{\Bd} - \Gamma_{\Bdb} \right] }{\text{d}q^2 \text{d}p^2 \text{d}\ctk \text{d}\ctl \text{d}\phi} = \sum_{i=1}^{9} I_i (\ctl,\ctk,\phi) - \bar{I}_i (\ctl,\ctk,\phiacp) \ .
+\end{align}
+Simplification of the angular distribution can be achieved by applying a transformation 
+ in $\phi$ such that $\phiprime = \phi - \pi $ 
+for $\phi < 0 $~\cite{Ksteepubnote}.
+The $I_{4,5,7,8}$ angular terms which are dependent on $\cos\phi$ or
+$\sin\phi$ cancel, leaving $I_{1,2,3,6,9}$ in the angular distribution.
+
+For a \kpi state which is a combination of different resonances,
+the amplitudes for a given handedness ($H=L,R$) can be expressed as a
+sum over the resonances ($J$)~\cite{Lu:2011jm},
+\begin{equation}
+\label{eq:amp}
+\begin{aligned}
+\mathcal{A}_{H,0/t}^{L,R}(\psq,\qsq) &= \sum_J \sqrt{N_J} \ A_{J,H,0}^{L,R}(\qsq) \ P_J(p^2) \ Y_J^0 (\theta_K,0)  \\
+\mathcal{A}_{H,||/\bot}^{L,R}(\psq,\qsq) &= \sum_J \sqrt{N_J} \ A_{J,H,||/\bot}^{L,R}(\qsq) \ P_J(p^2) \ Y_J^{-1} (\theta_K,0) , 
+\end{aligned}
+\end{equation}
+where $Y_J^m (\theta_K, 0)$ are the spherical harmonics, $\mathcal{M}$
+is the matrix element encompassing the \qsq dependence
+ and $P_J(\psq)$ is the propagator of the resonant \Kstarz state.
+
+
+

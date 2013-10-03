@@ -258,12 +258,44 @@ FUNCTION {emphasize}
   if$
 }
 
+INTEGERS{ l }
+FUNCTION{ string.length }
+{
+  #1 'l :=
+  {duplicate$ duplicate$ #1 l substring$ = not}
+  {l #1 + 'l :=}
+  while$
+  pop$ l
+}
+
+STRINGS{replace find text}
+INTEGERS{find_length}
+FUNCTION{find.replace}
+{ 'replace :=
+   'find :=
+   'text :=
+   find string.length 'find_length :=
+   ""
+   { text empty$ not }
+   { text #1 find_length substring$ find =
+       {
+	 replace *
+	 text #1 find_length + global.max$ substring$ 'text :=
+       }{
+	 text #1 #1 substring$ *
+	 text #2 global.max$ substring$ 'text :=
+       }
+     if$
+   }
+   while$
+}
+
 INTEGERS { nameptr namesleft numnames max.num.names.before.forced.et.al num.names.shown.with.forced.et.al }
 
 FUNCTION {format.names}
 { 's :=
   #1 'nameptr :=
-  #5 'max.num.names.before.forced.et.al :=
+  #4 'max.num.names.before.forced.et.al :=
   #1 'num.names.shown.with.forced.et.al :=
   s num.names$ 'numnames :=
   numnames 'namesleft :=
@@ -310,18 +342,18 @@ FUNCTION {format.authors}
 
 FUNCTION {format.eprint.newarXivid}
 { eprint #1 #6 substring$ "arXiv:" =
-    {"\href{http://xxx.lanl.gov/abs/" eprint #7 #9 substring$ * "}" *
+    {"\href{http://arxiv.org/abs/" eprint #7 #9 substring$ * "}" *
         "{{\tt " * eprint #7 #9 substring$ * "}}" *}
-    {"\href{http://xxx.lanl.gov/abs/" eprint #1 #9 substring$  * "}" *
+    {"\href{http://arxiv.org/abs/" eprint #1 #9 substring$  * "}" *
         "{{\tt arXiv:" * eprint #1 #9 substring$ * "}}" *}
   if$
 }
 
 FUNCTION {format.eprint.oldarXivid}
 { archive empty$
-    {"\href{http://xxx.lanl.gov/abs/" eprint * "}" *
+    {"\href{http://arxiv.org/abs/" eprint * "}" *
         "{{\tt arXiv:" * eprint * "}}" *}
-    {"\href{http://xxx.lanl.gov/abs/" archive *  "/" * eprint * "}" *
+    {"\href{http://arxiv.org/abs/" archive *  "/" * eprint * "}" *
         "{{\tt arXiv:" * archive * "/" * eprint * "}}" *}
   if$
 }
@@ -348,18 +380,26 @@ FUNCTION {format.eprint.paren}
   if$
 }
 
-%FUNCTION {format.lhcbid}
-%{ "\href{http://cdsweb.cern.ch/search?p=" number * 
-%  "&f=reportnumber&action_search=Search&c=LHCb+Reports&c=LHCb+Conference+Proceedings&c=LHCb+Conference+Contributions&c=LHCb+Notes&c=LHCb+Theses&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes&c=LHCb+Papers}{" * 
-%  number * "}" * 
-%}
-
-FUNCTION {format.lhcbid}
-{ "\href{http://cdsweb.cern.ch/search?ln=en&sc=1&p=" number * 
-  "&f=&action_search=Search&c=Articles+%26+Preprints&c=Books+%26+Proceedings&c=Presentations+%26+Talks&c=Periodicals+%26+Progress+Reports&c=Multimedia+%26+Outreach}{" * 
+FUNCTION {format.lhcbid.internal}
+{ "\href{http://cdsweb.cern.ch/search?p=" number * 
+  "&f=reportnumber&action_search=Search&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes} {" * 
   number * "}" * 
 }
 
+FUNCTION {format.lhcbid.public}
+{ "\href{http://cdsweb.cern.ch/search?p=" number * 
+  "&f=reportnumber&action_search=Search&c=LHCb+Reports&c=LHCb+Conference+Proceedings&c=LHCb+Conference+Contributions&c=LHCb+Notes&c=LHCb+Theses&c=LHCb+Papers} {" * 
+  number * "}" * 
+}
+
+FUNCTION {format.lhcbid}
+{ number #6 #3 substring$ "ANA" =
+  number #6 #3 substring$ "INT" =
+  or
+    { format.lhcbid.internal }
+    { format.lhcbid.public }
+  if$
+}
 
 FUNCTION {format.DOI}
 { DOI empty$
@@ -394,7 +434,6 @@ FUNCTION {format.title}
 { title empty$
     { "" }
     { "\ifthenelse{\boolean{articletitles}}{{\it " title "t" change.case$ * "}, " *  "}{}" * }
-%    { "{\it " title "t" change.case$ * "}, " * }
   if$
 }
 
@@ -755,7 +794,10 @@ FUNCTION {format.articlenodoi}
   { journal missing$
     { format.eprint output }
     { journal empty$ { format.eprint output } {
-      journal "journal" output.check
+      journal ".\ " "." find.replace 
+      ". " "." find.replace 
+      "." ".\ " find.replace 
+      "journal" output.check
       blank.sep
       format.volume output
       blank.sep
@@ -777,7 +819,7 @@ FUNCTION {format.articlenodoi}
       format.eprint.paren output
     }
   if$
-  new.sentence
+  mid.sentence 'output.state :=
   note output
   fin.entry
 }
@@ -794,7 +836,10 @@ FUNCTION {format.articledoi}
     { journal empty$ { format.eprint output } {
       "\href{http://dx.doi.org/" doi * "}{" * "doi" output.check
       article.sep
-      journal "journal" output.check
+      journal ".\ " "." find.replace 
+      ". " "." find.replace 
+      "." ".\ " find.replace 
+      "journal" output.check
       blank.sep
       format.volume output
       blank.sep
@@ -818,7 +863,7 @@ FUNCTION {format.articledoi}
       format.eprint.paren output
     }
   if$
-  new.sentence
+  mid.sentence 'output.state :=
   note output
   fin.entry
 }
@@ -845,9 +890,9 @@ FUNCTION {book}
   format.btitle "title" output.check
   crossref missing$
     { format.bvolume output
-      new.block
+%      new.block
       format.number.series output
-      new.sentence
+%      new.sentence
       publisher "publisher" output.check
       address output
     }
@@ -1063,14 +1108,11 @@ FUNCTION {phdthesis}
 { output.bibitem
   format.authors "author" output.check
   format.btitle "title" output.check
-  new.block
   "PhD thesis" format.thesis.type output.nonnull
   school "school" output.check
   address output
   format.date "year" output.check
-  new.block
   format.eprint output
-  new.block
   note output
   format.DOI output
   fin.entry

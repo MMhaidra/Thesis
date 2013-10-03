@@ -1,0 +1,280 @@
+\chapter{The full angular distribution for the S, P and D-wave in \BdToKpill}
+\label{fullangulardistribution}
+
+
+\begin{itemize}
+\item D-wave details
+\item Mention Pirjol's papoer and WEi Wang's other paper etc etc
+\end{itemize}
+
+
+
+\begin{itemize}
+\item Section description
+\item S and D-wave contributions to the angular analysis
+\item Formulaism for the S+P+D states
+\item angular distribution for S+P+D states
+\item angular observables for S,P,D
+\item show P and D almost seperate
+\item effect of S-wave on P-wave analysis
+\end{itemize}
+
+
+
+
+\section{Theory}
+
+\begin{align}
+\label{eq:amps1}
+\mathcal{A}_{H0} &= \sqrt{\frac{1}{4\pi}} A_{0H0} + \sqrt{\frac{3}{4\pi}} A_{0H0} \ctk + \sqrt{\frac{5}{16\pi}} A_{0H0} ( 3\ctksq - 1 )    \\
+\mathcal{A}_{H||} &= \sqrt{\frac{3}{8\pi}} A_{1H||} \stk + \sqrt{\frac{15}{8\pi}} A_{2H||} \ctk\stk  \\
+\mathcal{A}_{H\bot} &= \sqrt{\frac{3}{8\pi}} A_{1H\bot} \stk + \sqrt{\frac{15}{8\pi}} A_{2H\bot} \ctk\stk  
+\end{align}
+where the spherical harmonics are expanded, leaving the propagator and the matrix element as part of the spin-dependent amplitudes
+\begin{equation}
+\label{eq:amps2}
+\begin{split}
+A_{0,H,0} &\propto \  M_{0,H,0} (\qsq) \  P_0(\psq) , \\
+A_{1,H,0} &\propto  \  M_{1,H,0} (\qsq)\  P_1(\psq) , \\
+A_{1,H,\bot} &\propto  \  M_{1,H,\bot} (\qsq)\  P_1(\psq) , \\
+A_{1,H,||} &\propto  \  M_{1,H,||} (\qsq)\ P_1(\psq) , \\ 
+A_{2,H,0} &\propto  \  M_{2,H,0} (\qsq)\  P_2(\psq) , \\
+A_{2,H,\bot} &\propto  \  M_{2,H,\bot} (\qsq)\  P_2(\psq) , \\
+A_{2,H,||} &\propto  \  M_{2,H,||} (\qsq)\ P_2(\psq) , 
+\end{split}
+\end{equation}
+where the first index denotes the spin.
+
+
+
+\section{ D-wave angular observables }
+
+
+
+
+
+
+\begin{itemize}
+    \item \dots
+\end{itemize}
+
+\section{angular distribution}
+
+\begin{itemize}
+\item expand amplitudes
+\item coefficients
+\item propogators
+\item claculated angular distribution plots and \psq spectra etc
+\end{itemize}
+
+
+The  angular coefficients for a S + P + D state, nominally containing a \Kstarzo(892), a \Kstarzz S-wave and the \Kstarzt(1430) is given below.
+The expansion of the amplitudes is given by
+\begin{align}
+\mathcal{A}_{H0} &= \sqrt{\frac{1}{4\pi}} A_{0H0} + \sqrt{\frac{3}{4\pi}} A_{0H0} \ctk + \sqrt{\frac{5}{16\pi}} A_{0H0} ( 3\ctksq - 1 )    \\
+\mathcal{A}_{H||} &= \sqrt{\frac{3}{8\pi}} A_{1H||} \stk + \sqrt{\frac{15}{8\pi}} A_{2H||} \ctk\stk  \\
+\mathcal{A}_{H\bot} &= \sqrt{\frac{3}{8\pi}} A_{1H\bot} \stk + \sqrt{\frac{15}{8\pi}} A_{2H\bot} \ctk\stk  
+\end{align}
+and the angular distribution is given by
+\begin{align}
+I_1^c  =  & \frac{1}{4\pi} |A_{00}|^2 +   \frac{3}{4\pi} |A_{10}|^2 \ctksq +  \frac{5}{16\pi} |A_{20}|^2 (3\ctksq-1)^2 + \nonumber \\
+          &  +  \frac{\sqrt{3}}{4\pi} 2|A_{0L0}||A_{1L0}|\ctk\cos\delta_S +  \frac{\sqrt{5}}{8\pi} 2|A_{0L0}||A_{2L0}|\ctk\cos(\delta_S-\delta_D) \nonumber \\
+          &  +  \frac{\sqrt{15}}{8\pi} 2|A_{1L0}||A_{2L0}|\ctk\cos\delta_D + ( L\to R) \\
+I_1^s = \frac{3}{4}  & \left[ .\frac{3}{8\pi} \right. \left(  |A_{1||}|^2  +  |A_{1\bot}|^2 \right) \stksq  + \frac{15}{8\pi} \left(  |A_{2||}|^2  + |A_{2\bot}|^2 \right) \stksq\ctksq  \nonumber \\
+         & + \frac{3\sqrt{5}}{8\pi} 2|A_{1L||}||A_{2L||}| \stksq\ctk \cos\delta_D  +  \frac{3\sqrt{5}}{8\pi} 2|A_{1L\bot}||A_{2L\bot}| \stksq\ctk \cos\delta_D   \nonumber \\
+         & + \left. \frac{3\sqrt{5}}{8\pi} 2|A_{1R||}||A_{2R||}| \stksq\ctk \cos\delta_D  +  \frac{3\sqrt{5}}{8\pi} 2|A_{1R\bot}||A_{2R\bot}| \stksq\ctk \cos\delta_D    \right] \nonumber \\
+I_2^c = & - I_1^c \\
+I_2^s = & \frac{1}{3} I_1^s \\
+I_3 =  \frac{1}{2}&  \left[  \frac{3}{8\pi} ( |A_{1\bot}|^2 - |A_{1||}|^2 ) \stksq  +   \frac{15}{8\pi} ( |A_{2\bot}|^2 - |A_{2||}|^2 ) \stksq\ctksq  \right) \nonumber \\
+ & + \frac{3\sqrt{5}}{8\pi} 2|A_{1L\bot}||A_{2L\bot}| \cos\delta_D \stksq\ctk +  \frac{3\sqrt{5}}{8\pi} 2|A_{1L||}||A_{2L||}| \cos\delta_D \stksq\ctk  \nonumber \\
+ & +  \left. \frac{3\sqrt{5}}{8\pi} 2|A_{1R\bot}||A_{2R\bot}| \cos\delta_D \stksq\ctk +  \frac{3\sqrt{5}}{8\pi} 2|A_{1R||}||A_{2R||}| \cos\delta_D \stksq\ctk  \right] \\
+ I_4 = \frac{1}{\sqrt{2}} &  \left[  \frac{\sqrt{3}}{4\pi\sqrt{2}} \Re( A_{0L0} A_{1L||}^{*} )\stk\cos\delta_S + \frac{3}{4\pi\sqrt{2}} \Re( A_{1L0} A_{1L||}^{*} ) \ctk\stk    \right. \nonumber \\
+    & + \frac{\sqrt{15}}{8\pi\sqrt{2}} \Re( A_{2L0} A_{1L||}^{*} ) (3\ctksq-1) \stk \cos\delta_D \nonumber \\
+    & + \frac{\sqrt{15}}{4\pi\sqrt{2}} \Re( A_{0L0} A_{2L||}^{*} )\stk \ctk \cos(\delta_S-\delta_D) \nonumber \\
+    & + \frac{3\sqrt{5}}{4\pi\sqrt{2}} \Re( A_{1L0} A_{2L||}^{*} ) \ctksq \stk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{5\sqrt{3}}{8\pi\sqrt{2}} \Re( A_{2L0} A_{2L||}^{*} )(3\ctksq-1)\ctk\stk  \right] - ( L\to R)\\
+\dots & \dots 
+\end{align}
+and
+\begin{align}
+I_5 = \sqrt{2} &  \left[  \frac{\sqrt{3}}{4\pi\sqrt{2}} \Re( A_{0L0} A_{1L\bot}^{*} )\stk\cos\delta_S + \frac{3}{4\pi\sqrt{2}} \Re( A_{1L0} A_{1L\bot}^{*} ) \stk \ctk   \right. \nonumber \\
+    & + \frac{\sqrt{15}}{8\pi\sqrt{2}} \Re( A_{2L0} A_{1L\bot}^{*} ) (3\ctksq-1) \stk \cos\delta_D \nonumber \\
+    & + \frac{\sqrt{15}}{4\pi\sqrt{2}} \Re( A_{0L0} A_{2L\bot}^{*} )\stk\ctk \cos(\delta_S-\delta_D) \nonumber \\
+    & + \frac{3\sqrt{5}}{4\pi\sqrt{2}} \Re( A_{1L0} A_{2L\bot}^{*} ) \ctksq\stk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{5\sqrt{3}}{8\pi\sqrt{2}} \Re( A_{2L0} A_{2L\bot}^{*} )(3\ctksq-1)\ctk\stk \right] - ( L\to R)\\
+I_6 = 2 &  \left[  \frac{3}{8\pi} \Re( A_{1||} A_{1L\bot}^{*} ) \stksq   \right. \nonumber \\
+    & + \frac{3\sqrt{5}}{8\pi} \Re( A_{2||} A_{1L\bot}^{*} ) \stksq \ctk \cos\delta_D \nonumber \\
+    & + \frac{3\sqrt{5}}{8\pi} \Re( A_{1||} A_{2L\bot}^{*} ) \stksq \ctk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{15}{8\pi} \Re( A_{2||} A_{2L\bot}^{*} ) \stksq \ctksq  \right] - ( L\to R)\\
+ I_7 = \sqrt{2} &  \left[  \frac{\sqrt{3}}{4\pi\sqrt{2}} \Im( A_{0L0} A_{1L||}^{*} )\stk\cos\delta_S + \frac{3}{4\pi\sqrt{2}} \Im( A_{1L0} A_{1L||}^{*} ) \stk \ctk   \right. \nonumber \\
+    & + \frac{\sqrt{15}}{8\pi\sqrt{2}} \Im( A_{2L0} A_{1L||}^{*} ) (3\ctksq-1) \stk \cos\delta_D \nonumber \\
+    & + \frac{\sqrt{15}}{4\pi\sqrt{2}} \Im( A_{0L0} A_{2L||}^{*} )\stk\ctk \cos(\delta_S-\delta_D) \nonumber \\
+    & + \frac{3\sqrt{5}}{4\pi\sqrt{2}} \Im( A_{1L0} A_{2L||}^{*} ) \ctksq\stk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{5\sqrt{3}}{8\pi\sqrt{2}} \Im( A_{2L0} A_{2L||}^{*} )(3\ctksq-1)\ctk\stk  \right] - ( L\to R)
+\end{align}
+and
+\begin{align}
+I_8 = \frac{1}{\sqrt{2}} &  \left[  \frac{\sqrt{3}}{4\pi\sqrt{2}} \Im( A_{0L0} A_{1L\bot}^{*} )\stk\cos\delta_S + \frac{3}{4\pi\sqrt{2}} \Im( A_{1L0} A_{1L\bot}^{*} ) \stk \ctk   \right. \nonumber \\
+    & + \frac{\sqrt{15}}{8\pi\sqrt{2}} \Im( A_{2L0} A_{1L\bot}^{*} ) (3\ctksq-1) \stk \cos\delta_D \nonumber \\
+    & + \frac{\sqrt{15}}{4\pi\sqrt{2}} \Im( A_{0L0} A_{2L\bot}^{*} )\stk\ctk \cos(\delta_S-\delta_D) \nonumber \\
+    & + \frac{3\sqrt{5}}{4\pi\sqrt{2}} \Im( A_{1L0} A_{2L\bot}^{*} ) \ctksq\stk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{5\sqrt{3}}{8\pi\sqrt{2}} \Im( A_{2L0} A_{2L\bot}^{*} )(3\ctksq-1)\ctk\stk \right] + ( L\to R)\\
+I_9 =  &  \left[  \frac{3}{8\pi} \Im( A_{1||} A_{1L\bot}^{*} ) \stksq    \right. \nonumber \\
+    & + \frac{3\sqrt{5}}{8\pi} \Im( A_{2||} A_{1L\bot}^{*} ) \stksq \ctk \cos\delta_D \nonumber \\
+    & + \frac{3\sqrt{5}}{8\pi} \Im( A_{1||} A_{2L\bot}^{*} ) \stksq \ctk \cos\delta_D \nonumber \\ 
+    & + \left. \frac{15}{8\pi} \Im( A_{2||} A_{2L\bot}^{*} )\ctksq\stksq  \right] + ( L\to R)
+\end{align}
+where the phases are defined as 
+\begin{subequations}\begin{align}
+ \delta_S &= \delta_0 - \delta_1 \\
+ \delta_D &= \delta_1 - \delta_2
+\end{align}\end{subequations}
+Here we assume the matrix elements are real ( Standard Model ) and that the only phase difference is the strong phase.
+
+
+
+\subsection{ Angular distributions including the D-wave }
+
+The complete set of angular coefficients for the combination of the S,P and D
+
+
+\subsubsection{Interference terms}
+
+\begin{itemize}
+\item S + D interference parameters
+\item P + D interference parameters
+\end{itemize}
+
+
+
+\subsubsection{S + D wave }
+
+The first angular distribution, in order of simplicity, 
+is the combination of the S and the D-waves. 
+A second simplification to integrate out \varphi ( or \phiprime )
+fo leave the angular distribution as a function of \psq,\qsq,\ctl,  and \ctk.
+This is the angular distribution for the region around the D-wave peak, 
+where the contribution from the P-wave is small.
+
+\begin{itemize}
+\item \dots
+\end{itemize}
+
+
+\subsubsection{S+P+D wave}
+
+The complete angular distribution for the S,P and D-waves is given below as a function of \psq,\qsq,\ctk and \ctl
+
+\begin{itemize}
+\item \dots
+\end{itemize}
+
+
+
+\subsection{Partial wave discussion}
+
+
+
+The angular distribution with respect to \ctl and \ctk for the S+P+D wave system is given by
+\begin{equation}
+\frac{\text{d}^5\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} = \frac{3}{8} (2\pi) \left( (I_1^c + 2 I_1^s ) + ( I_2^c + 2 I_2^s ) (2\ctlsq-1) + 2 I_6 \ctl \right)
+\end{equation}
+which leads to 
+\begin{align}
+\frac{\text{d}^5\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} = \frac{3}{8} (2\pi) & \left( (|\mathcal{A}_{0}|^2 + 2 \frac{3}{4} [ |\mathcal{A}_{||}|^2 + |\mathcal{A}_{\bot}|^2 ] ) \right. \nonumber \\
+ & + ( - |\mathcal{A}_{0}|^2 + 2 \frac{1}{4}  |\mathcal{A}_{||}|^2 + |\mathcal{A}_{\bot}|^2 ] ) (2\ctlsq-1) \nonumber \\
+ & + \left. 4 [ \Re( \mathcal{A}_{L||}\mathcal{A}_{L\bot}) -\Re( \mathcal{A}_{R||}\mathcal{A}_{R\bot}) ] \ctl  \right)
+\end{align}
+and simplifying
+\begin{align}
+\frac{\text{d}^5\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} = \frac{3}{8} (2\pi) & \left(  2 |\mathcal{A}_{0}|^2 ( 1 - \ctlsq )  +[  |\mathcal{A}_{||}|^2 + |\mathcal{A}_{\bot}|^2 ] ( 1 + \ctlsq )   \right. \nonumber \\
+ & + \left. 4 [ \Re( \mathcal{A}_{L||}\mathcal{A}_{L\bot}) -\Re( \mathcal{A}_{R||}\mathcal{A}_{R\bot}) ] \ctl  \right)
+\end{align}
+
+Inserting the expansion of the amplitudes into this expression, we get
+\begin{align}
+ \frac{\text{d}^4\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} &= \frac{3}{8} (2\pi) \left( \right.  \nonumber \\
+  &  2 \left[   \frac{1}{4\pi} |A_{00}|^2 + \frac{3}{4\pi} |A_{10}|^2 \ctksq +  \frac{5}{16\pi} |A_{20}|^2 (3\ctksq-1)^2 \right.  \nonumber \\
+  & + \frac{\sqrt{3}}{4\pi} 2|A_{0L0}||A_{1L0}|\cos\delta_S \ctk + ( L \to R )  \nonumber \\
+  & +  \frac{\sqrt{5}}{8\pi} 2|A_{0L0}||A_{2L0}|\cos(\delta_S-\delta_D) (3\ctksq-1) + ( L \to R )  \nonumber \\
+  & + \left.  \frac{\sqrt{15}}{8\pi} 2|A_{1L0}||A_{2L0}|\cos\delta_D (3\ctksq-1) \ctk + ( L \to R )  \right] ( 1-\ctlsq) \nonumber \\
+  & + \frac{3}{2} \left[ \frac{3}{8\pi}  \left(  |A_{1||}|^2  +  |A_{1\bot}|^2 \right) (1-\ctksq) \right.  \nonumber \\
+  & + \frac{15}{8\pi} \left(  |A_{2||}|^2  + |A_{2\bot}|^2 \right) (1-\ctksq) \ctksq   \nonumber \\
+  & + \frac{3\sqrt{5}}{8\pi} 2|A_{1L||}||A_{2L||}| \cos\delta_D (1-\ctksq)\ctk  + ( L \to R ) \nonumber \\
+  & + \left. \frac{3\sqrt{5}}{8\pi} 2|A_{1L\bot}||A_{2L\bot}| \cos\delta_D (1-\ctksq)\ctk + ( L \to R ) \right] ( 1 + \ctlsq ) \nonumber \\  
+  & + 4 \left[ \frac{3}{8\pi} [ \Re( A_{1L||}A_{1L\bot}^{*}) -\Re( A_{1R||} A_{1R\bot}^{*}) ] (1-\ctksq) \right.  \nonumber \\
+  & + \frac{15}{8\pi} [ \Re( A_{2L||}A_{2L\bot}^{*}) -\Re( A_{2R||} A_{2R\bot}^{*}) ] (1-\ctksq) \ctksq  \nonumber \\
+  & + \frac{3\sqrt{5}}{8\pi} [ \Re( A_{1L||}A_{2L\bot}^{*}) -\Re( A_{1R||} A_{2R\bot}^{*}) ] \cos\delta_D (1-\ctksq) \ctk  \nonumber \\
+  & + \left. \frac{3\sqrt{5}}{8\pi} [ \Re( A_{2L||}A_{1L\bot}^{*}) -\Re( A_{2R||} A_{1R\bot}^{*}) ] \cos\delta_D (1-\ctksq) \ctk \right] \ctl \nonumber \\
+\end{align}
+
+
+
+\section{Observables for a combined S+P+D state}
+
+Follow the \BdToKstmm thinking - isolate the resonances. We have
+$$ \Gamma = \Gamma_0 + \Gamma_1 + \Gamma_2 $$
+where
+$$ \Gamma_0 = |A_{00}|^2 $$, $$ \Gamma_1 = |A_{10}|^2 |A_{1||}|^2 + |A_{1\bot}|^2$$ and $$ \Gamma_2 = |A_{20}|^2 + |A_{2||}|^2 + |A_{2\bot}|^2 $$.
+The fraction of the state w.r.t to the total width is given by
+\begin{subequations}\begin{align}
+\FS & = \frac{\Gamma_0}{\Gamma} = \frac{|A_{00}|^2}{\Gamma} \\
+\FP & = \frac{\Gamma_1}{\Gamma} = \frac{|A_{10}|^2 |A_{1||}|^2 + |A_{1\bot}|^2}{\Gamma} \\
+\FD & = \frac{\Gamma_2}{\Gamma} = \frac{|A_{20}|^2 + |A_{2||}|^2 + |A_{2\bot}|^2 }{\Gamma} \\
+\FLS & =  \frac{|A_{00}|^2}{\Gamma_0}  \\
+\FLP & = \frac{|A_{10}|^2}{\Gamma_1} \\
+\FLD & = \frac{|A_{20}|^2}{\Gamma_2} \\
+\AFB &=  \frac{3}{2} \frac{ \Re( A_{1L||}A_{1L\bot}^{*}) -\Re( A_{1R||} A_{1R\bot}^{*})}{\Gamma_1} \\
+\AFBD &= \frac{3}{2} \frac{ \Re( A_{2L||}A_{2L\bot}^{*}) -\Re( A_{2R||} A_{2R\bot}^{*})}{\Gamma_2}
+\end{align}\end{subequations}
+which leaves factors of $(1-\FS-\FD)$ in front of the spin-1 observables, factors of $(1-\FS-\FP$) in front of the spin-2 observables.
+The S-wave is a common dilution factor here.
+The S-wave analysis mixes \FS and \FLS since they are equivalent.
+
+
+
+Define the interference terms in terms of asymmetry observables
+\begin{align}
+\ASP &=  \frac{2|A_{0L0}||A_{1L0}|\cos\delta_S  + ( L \to R )}{\Gamma} \\
+\ASD &= \frac{ 2|A_{0L0}||A_{2L0}|\cos(\delta_S - \delta_D)  + ( L \to R )}{\Gamma} \\
+\APDL &= \frac{2|A_{1L0}||A_{2L0}|\cos\delta_D  + ( L \to R )}{\Gamma} \\
+\APDPa &= \frac{2|A_{1L||}||A_{2L||}| \cos\delta_D + ( L \to R )}{\Gamma} \\
+\APDPb &= \frac{2|A_{1L\bot}||A_{2L\bot}| \cos\delta_D +  ( L \to R )}{\Gamma}   \\
+\APDT &=  \ADP + \ADT \\
+\AFBO &= \frac{3}{2} \frac{ \Re( A_{1L||}A_{2L\bot}^{*}) -\Re( A_{1R||} A_{2R\bot}^{*})}{\Gamma}   \\
+\AFBT &= \frac{3}{2} \frac{ \Re( A_{2L||}A_{1L\bot}^{*}) -\Re( A_{2R||} A_{1R\bot}^{*})}{\Gamma} 
+\end{align}
+
+\subsection{Angular distributions}
+
+S+P+D
+
+\begin{align}
+\frac{1}{\Gamma} \frac{\text{d}^4\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} &=  \nonumber \\
+  &     \frac{3}{4}    \left[  \frac{1}{2}  \FS + \frac{3}{2} \FP \FLP  \ctksq \right. +  \frac{5}{8} \FD \FLD  (3\ctksq-1)^2   \nonumber \\
+  & + \frac{ \sqrt{3}}{2} \FSP \ASP \ctk   \nonumber \\
+  & + \frac{\sqrt{5}}{4} \FSD \ASD (3\ctksq-1)\nonumber \\
+  & + \left. \frac{\sqrt{15}}{4} \FPD \APDL (3\ctksq-1) \ctk  \right] ( 1-\ctlsq) \nonumber \\
+  & + \frac{3}{8} \left[ \frac{3}{4} \FP (1-\FL) (1-\ctksq) \right.  \nonumber \\
+  & + \frac{15}{4} \FD (1-\FLD) (1-\ctksq) \ctksq   \nonumber \\
+  & + \left. \frac{2\sqrt{5}}{4} \FPD \APDT  (1-\ctksq)\ctk \right] ( 1 + \ctlsq ) \nonumber \\  
+  & +  \frac{3}{4}   \left[   \FP \AFB  \right.  +  5  \FD \AFBD  \ctksq  \nonumber \\
+  & + \sqrt{5} \FPD \AFBO   \ctk  \nonumber \\
+  & + \left. \sqrt{5}  \FPD \AFBT  \ctk \right]  (1-\ctksq) \ctl \nonumber \\
+\end{align}
+
+and 
+
+\begin{align}
+\frac{1}{\Gamma} \frac{\text{d}^4\Gamma}{ \text{d}\qsq \text{d}p^2 \text{d}\ctk \text{d}\ctl} &= \frac{3}{8} (2\pi) \left( \right.  \nonumber \\
+  &  2 \frac{4}{3} \left[   \frac{1}{4\pi} \FS + \frac{3}{4\pi} \FP \FLP  \ctksq \right. \nonumber \\
+  & +  \frac{5}{16\pi} \FD \FLD  (3\ctksq-1)^2   \nonumber \\
+  & + \frac{\sqrt{3}}{4\pi} \FSP \ASP \ctk   \nonumber \\
+  & +  \frac{\sqrt{5}}{8\pi} \FSD \ASD (3\ctksq-1)\nonumber \\
+  & + \left.  \frac{\sqrt{15}}{8\pi} \FPD \APDL (3\ctksq-1) \ctk  \right]  \nonumber \\
+  & + \frac{3}{2} \frac{8}{3} \left[ \frac{3}{8\pi} \FP  (1-\FL) (1-\ctksq) \right.  \nonumber \\
+  & + \frac{15}{8\pi} \FD (1-\FLD) (1-\ctksq) \ctksq   \nonumber \\
+  & + \left. \frac{3\sqrt{5}}{8\pi} \FPD \APDT (1-\ctksq)\ctk  \right]  \nonumber \\  
+\end{align}
+
+

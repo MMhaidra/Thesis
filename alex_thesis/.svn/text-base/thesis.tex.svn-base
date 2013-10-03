@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Thesis master file
-%% Paul SCHAACK
+%% Alex Shires
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -13,16 +13,14 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[toc,page]{appendix}
-%\usepackage{style/binary} % required for hep particles (?) %already used by lhcb_symbols_def.tex
 \usepackage{booktabs} % for nicer spacing between table lines
-%\usepackage{style/braket} % for nicer bra ket notations %already in lhcb_symbols_def.tex
 \usepackage{style/cancel} %to cancel terms in equations
 \usepackage{caption}
 \usepackage{cite} % to compress consecutive references, i.e. 1,2,3,4 -> 1-4
 \usepackage{color} % for coloured text
 \usepackage[nodayofweek]{datetime} % for date format customisation
 \usepackage{enumitem} % for customisable lists
-\usepackage{fancyhdr} % for header/footer customisation
+%\usepackage{fancyhdr} % for header/footer customisation
 \usepackage[bottom]{footmisc} % to force footnotes to bottom of page
 \usepackage{graphicx} % to include figures
 %\usepackage{style/hepnames} % to include hep names
@@ -35,27 +33,31 @@
 \usepackage{multirow} % for table elements spanning multiple rows or columns
 \usepackage{setspace} % to change line spacing
 %\usepackage{style/SIunits} % to include SI units %already in lhcb_symbols_def.tex (most of them)
-\usepackage{subfig} % for figures within figures
+\usepackage{subfigure} % for figures within figures
 %\usepackage[notlof,notlot,nottoc]{tocbibind} % for contents list without figures, tables or contents
 \usepackage[nottoc]{tocbibind} % for contents list without figures, tables or contents
 \usepackage{upgreek} % for upright lowercase greek letters
 \usepackage{url} % for nicer urls \url{}
 \usepackage{xspace} % for intelligent spacing after alias commands
-
-
+\usepackage{alltt}
+%\usepackage{quotation}
+\usepackage{array}
+%\usepackage{todonotes}
 % Choose border size -----------------------------------------
 \usepackage[margin=2.5cm]{geometry} % for screen
 %\usepackage[margin=2.5cm, inner=2.9cm, outer=2.1cm]{geometry} % for bound copy
-
+\usepackage{lscape}
+\usepackage{pdfpages}
+	
 
 % Hyperlinks ------------------------------------------------
 \usepackage{hyperref} % must be the last package loaded
 \hypersetup{
  urlcolor=black, linkcolor=black, citecolor=black, colorlinks=true, % coloured text or surrounding box
- linktoc=all, % contents list link: none, section, page, all
+ %linktoc=all, % contents list link: none, section, page, all
  % pdf viewer options
- pdftitle = {Alex\rq{}s Thesis},
- pdfauthor = {Alex Shires},
+ pdftitle = {Exploring b to s electroweak penguin decays at LHCb},
+ pdfauthor = {Alexander Shires},
  pdfstartpage=1, pdfstartview=FitV, pdfpagemode=UseOutlines, 
  bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,
 }
@@ -79,6 +81,40 @@
 }
 \makeatother
 
+
+%% fix to allow peaceful coexistence of line numbering and
+%% mathematical objects
+%% http://www.latex-community.org/forum/viewtopic.php?f=5&t=163
+%%
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+\expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+\expandafter\let\csname oldend#1\expandafter\endcsname\csname
+end#1\endcsname
+ \renewenvironment{#1}%
+   {\linenomath\csname old#1\endcsname}%
+   {\csname oldend#1\endcsname\endlinenomath}%
+}
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+  \patchAmsMathEnvironmentForLineno{#1}%
+  \patchAmsMathEnvironmentForLineno{#1*}%
+}
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+
+
+\newcommand{\pdfchapter[1]}{\chapter{\textorpdfstring{#1}}}
+\newcommand{\pdfsection[1]}{\section{\textorpdfstring{#1}}}
+\newcommand{\pdfsubsection[1]}{\subsection{\textorpdfstring{#1}}}
+\newcommand{\pdfsubsubsection[1]}{\subsubsection{\textorpdfstring{#1}}}
+
+
+
 \numberwithin{equation}{chapter}
 % Make this the last packages you include before the \begin{document}
 %required for LHCb bibtext style! (and doesnt work when cite and mcite are in 'style')
@@ -92,57 +128,57 @@
 \setcounter{secnumdepth}{2} % for title numbering down to \subsection
 \newboolean{onlymainmatter}
 \frenchspacing % for uniform spacing after all punctuation
-\singlespacing
-%\onehalfspacing
-%\doublespacing
 \raggedbottom % to stop variable spacing between paragraphs
 \sloppy % to relax the rules for line breaking
 
-\pagestyle{fancy}
-\fancyhf{} % remove everything
-\fancyhead[LE,RO]{\thepage} % page number on top outside corner
-\fancyhead[RE]{\nouppercase{\bf \leftmark}} % chapter on inside corner (uppercase breaks acronyms)
-\fancyhead[LO]{\nouppercase{\bf \rightmark}} % section on inside corner (ditto)
-\fancyfoot{} % empty
+%% Draft mode options ------------------------------------------------
+
+\setboolean{onlymainmatter}{false}   %%'true' or 'false' 
+
+
+%\pagestyle{fancy}
+%\fancyhf{} % remove everything
+%\fancyhead[LE,RO]{\thepage} % page number on top outside corner
+%\fancyhead[RE]{\nouppercase{\bf \leftmark}} % chapter on inside corner (uppercase breaks acronyms)
+%\fancyhead[LO]{\nouppercase{\bf \rightmark}} % section on inside corner (ditto)
+%\fancyfoot{} % empty
 
 %All new chapter and cleardoublepages have "plain"
-\fancypagestyle{plain}{ %
-\fancyhf{} % remove everything
-\fancyfoot[LE,RO]{\thepage}
+%\fancypagestyle{plain}{ %
+%\fancyhf{} % remove everything
+%\fancyfoot[LE,RO]{\thepage}
 %if you dont want page numbers on even pages use the following instead:
 %\fancyfoot[RO]{\thepage}
-\renewcommand{\headrulewidth}{0pt} % remove lines as well
-\renewcommand{\footrulewidth}{0pt}
-}
+%\renewcommand{\headrulewidth}{0pt} % remove lines as well
+%\renewcommand{\footrulewidth}{0pt}
+%}
 %The title page has "empty"
-\fancypagestyle{empty}{ %
-\fancyhf{} % remove everything
-\renewcommand{\headrulewidth}{0pt} % remove lines as well
-\renewcommand{\footrulewidth}{0pt}
-}
+%\fancypagestyle{empty}{ %
+%\fancyhf{} % remove everything
+%\renewcommand{\headrulewidth}{0pt} % remove lines as well
+%\renewcommand{\footrulewidth}{0pt}	
+%}
 \def\doublepage {\clearpage{\pagestyle{plain}\cleardoublepage}}
-
+%%% WHAT DOES THIS DO????
 \def\imagetop#1{\vtop{\null\hbox{#1}}}
 
 
 
-
+	
 %++++++++++++++++++++++++++++++++++
 %++++++++++++++++++++++++++++++++++
 %++++++++++++++++++++++++++++++++++
 
 
-%% Draft mode options ------------------------------------------------
-
-%\linenumbers   %% turn on for draft mode
-\setboolean{onlymainmatter}{true}   %%'true' or 'false' 
 
 
 
 %%------------FRONTMATTER
 \ifthenelse{\boolean{onlymainmatter}}{
+\singlespacing
 \input{frontmatter/title}
 \tableofcontents
+\linenumbers   %% turn on for draft mode	
 }{
 \input{frontmatter/title}
 \doublepage % or \cleardoublepage for no page numbers
@@ -153,42 +189,61 @@
 \doublepage
 \listoftables
 \doublepage
+\doublespacing
 }
+
 
 %%------------MAINMATTER	
 \input{chapter1/introduction}
-\newpage
-\input{chapter2/standardmodel}
-\newpage
-\input{chapter3/lhcbdetector}
-\newpage
+\doublepage
+\input{chapter2/formalism}
+\doublepage
 \input{chapter4/kstmmtheory}
-\newpage
-\input{chapter5/acceptance_correction}
-\newpage
+\doublepage
+\input{chapter3/lhcbdetector}
+\doublepage
+\input{chapter5/kstmm}
+\doublepage
 \input{chapter6/swave}
-\newpage
-\input{chapter7/dwave}
-\newpage
+\doublepage
+\input{chapter7/swave}
+\doublepage
+\input{backmatter/summary}
+\doublepage
+
+%\%ifthenelse{\boolean{onlymainmatter}}{}
+%{
+%}
+
+
+
+
 
 
 %%------------BACKMATTER
 %\bibliographystyle{style/JHEP}    %either this
 \bibliographystyle{style/LHCb}        % or this... (better imo)
-\bibliography{main}
+\bibliography{lhcbmain,theo,exp,LHCb-PAPER,LHCb-CONF,cosmo}
 
 %\doublepage
-%% to include LoA here and not in the appendix use this:
+%% to include LoA here and not in the appendix use this:	
 %\phantomsection 
 %\addcontentsline{toc}{chapter}{List of Acronyms} 
 %\input{backmatter/acronyms}
 %\doublepage
 %%
+
 %% to include "Appendix" in ToC use this:
-%\phantomsection 
-%\addcontentsline{toc}{chapter}{Appendix}
+\phantomsection 	
+\addcontentsline{toc}{chapter}{Appendix}
 %%
-%\input{backmatter/appendix}
+\appendix
+
+\input{appendix/kstmm_systematics}
+\input{appendix/licence}
+%\input{appendix/jpsikstarswave}
+%\input{appendix/fullangulardistribution}
+%\input{appendix/all_swave_fits}
 %\doublepage
 
 
@@ -199,3 +254,4 @@
 
 \end{document}
 % ===============================================
+	

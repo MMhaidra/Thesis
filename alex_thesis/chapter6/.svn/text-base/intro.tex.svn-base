@@ -1,0 +1,42 @@
+\section{Introduction}
+\label{sec:swave:intro}
+
+With the acquisition of large data sets of \BdToKstll decays,
+it is possible to study the validity of some of the assumptions that have been 
+made to measure the angular observables in experiments to date. 
+Nearly all theoretical papers to date use the 
+assumption that for the \kpi system the natural width of
+the $\Kstarz(892)$ can be ignored. 
+This means there is no interference with other
+\kpi resonances. Existing \BdToKstll analyses
+consider \BdToKstll signal with \kpi candidates in a
+narrow mass window around the $\Kstarz(892)$. 
+However, in this region
+there is evidence of a broad S-wave below the $\Kstarz(892)$
+and higher mass states which decay strongly to \kpi, such as the S-wave $\Kstarzz(1430)$
+and the D-wave $\Kstarzt(1430)$~\cite{PDG2012}. 
+The best understanding of the low mass S-wave contribution comes from
+the analysis of \kpi scattering at the LASS experiment~\cite{Aston:179353}. 
+
+The interference of an S-wave in a predominantly P-wave system has
+previously been used to disambiguate otherwise equivalent solutions
+for the value of the \CP-violating phase in \Bz~\cite{Aubert:2004cp}
+and \Bs~\cite{Aaij:2012eq} oscillations.
+In the determination of $\varphi_s$ in the $\decay{\Bs}{\jpsi\phi}$ decay it was also shown
+ that it is required to take the S-wave contribution into account 
+~\cite{Xie:2009fs} and this has subsequently been done for the experimental 
+measurements described in~\cite{CDF:2011af,Abazov:2011ry,LHCb-PAPER-2011-021}.
+In Chapter~\ref{chap:kstmm}, the S-wave was included as a systematic error on the analysis.
+Here, the \Kstarz is used for any neutral kaon state which decays to \kpi. 
+
+In this Chapter, a generic \kpi S-wave contribution to \BdToKstll is included in the angular analysis.  
+The explicit inclusion of a spin-0 S-wave and a spin-1 P-wave state in the 
+\BdToKpill angular distribution is developed in Section~\ref{sec:swave:theo}.
+The consequences of including a \kpi S-wave on the angular observables is shown in Section~\ref{sec:swave:theo:obs}.
+% formalism set out in~\cite{Lu:2011jm} to explicitly include 
+The impact of an S-wave contribution on the determination of the theoretical observables is evaluated in Section~\ref{sec:swave:testing}.
+The minimum sample size in which ignoring a \kpi S-wave contribution contributs a significant bias to measurements of 
+the angular observables is found in Section~\ref{sec:swave:ignore}
+along with the minimum S-wave contribution needed to bias the angular observables.
+Section~\ref{sec:swave:measurement} demonstrates how the S-wave contribution can be correctly taken into account and 
+evaluates the effect of this on the angular observables.

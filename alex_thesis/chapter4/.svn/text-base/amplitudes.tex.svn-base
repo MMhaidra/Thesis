@@ -1,0 +1,91 @@
+\section{Amplitudes}
+\label{sec:kstmm:amps}
+
+The amplitudes of \BdToKpill parametrise the decay and are different for each polarisation of the \kpi state and of the dilepton system.
+The dilepton is a vector state and the \kpi system is considered to be in a scalar (S-wave) or a vector (P-wave) state.
+The matrix element for  \BdToKpill takes the same form for  both \kpi states and can be written~\cite{AltmannshoferBall} as
+\begin{align}
+\mathcal{M} =& \frac{G_F \alpha_s}{2\pi} \Vtb\Vts \bigg( \bigg[ \bra\kpi  \bar{s}\gamma_\mu \left( \Ceff9 P_L + \Cpeff9 P_R \right) \bquark \ket{\bar{B}}  \nonumber \\
+ &  - \frac{2m_b}{\qsq} \bra\kpi  \bar{s} i \sigma^{\mu\nu} q_\nu \left( \Ceff7 P_R + \Cpeff7 P_L \right) \bquark\ket{\bar{B}} \bigg] \left( \bar{\ell}\gamma_{\mu} \ell\right)  \nonumber \\
+ &  + \bra\kpi  \bar{s} \gamma^\mu \left( \Ceff10 P_L + \Cpeff10 P_R \right) b \ket{\bar{B}} \left( \bar{\ell} \gamma_\mu \gamma_5 \ell \right)   \bigg)    
+\end{align}
+where contributions from scalar and pseudoscalar operators have been ignored.
+
+\subsection{\BdToKstll}
+
+The \kpi P-wave has three polarisation states:
+The total amplitude for the decay of a pseudo-scalar to two vector particles, $\decay{P}{V_1 V_2}$, can be written as a combination of the 
+polarisation tensors and the matrix element,
+\begin{align}
+\label{eq:pol}
+M(\decay{P}{V_1 V_2}) &= \epsilon_{V_1}^{*\mu} M_{\mu\nu} \epsilon_{V_2}^{*\nu} \, .
+\end{align}
+Each of the polarisation states for a vector state described by the momentum vector 
+$p^\mu = \left(p_0, 0, 0, p_z\right)$ can be written as
+\begin{subequations}\begin{align}
+\epsilon_V^\mu(\pm) &= \left( 0, 1, \pm i, 0\right) / \sqrt{2} \\
+\epsilon_V^\mu(0) &= \left( p_z, 0, 0, -p_0\right) / \sqrt{p^2} \\
+\epsilon_V^\mu(t) &= \left( p_0, 0, 0, p_z\right) / \sqrt{p^2} \ .
+\end{align}\end{subequations}
+In the context of the decay \BdToKstll there is a virtual gauge boson and a real \Kstarz.
+The gauge boson can exist in all four possible polarisation states $(0, \pm, t)$ but the \Kstarz is on shell and only 
+ has three states $(0, \pm)$.
+The helicity amplitudes can be obtained by contracting the polarisation states for each of the 
+particles in Eq~\ref{eq:pol} to give 
+\begin{align}
+H_i = M_{i,i} \, ,
+\end{align}
+with an implicit sum over $i = 0, ||$ and $\bot$, and additionally $H_t = M_{0,t}$.
+The transversity amplitudes are combinations of the helicity amplitudes
+\begin{align}
+A_{||,\bot} = ( H_{+} \mp H_{-} ) \sqrt{2} , \quad A_0 = H_0 , \quad \text{and} \,  A_t = H_t 
+\end{align}
+The subsequent decay of the vector boson to dilepton system allows for both left and right-handed currents in 
+the longitudinal, parallel and perpendicular polarisations so there are in total seven transversity amplitudes.
+The transversity amplitudes  for the P-wave \Kstarzo state can be written to leading order~\cite{AltmannshoferBall} as	
+\begin{subequations}\begin{align}
+A_{1,L/R,0}(\qsq)=& -\frac{N}{2m_{\Kstarzo}\sqrt{\qsq}} \Bigg(  \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right)  \nonumber\\ 
+ & \bigg[ \left( \mB^2 - m_{\Kstarzo}^2 - \qsq \right) \left( \mB + m_{\Kstarzo} \right) A_1(\qsq) - \lambda \frac{A_2(\qsq)}{\mB + \m_{\Kstarzo}} \bigg]   \\ 
+ & + 2m_b \left( \Ceff7 - \Cpeff7 \right) \bigg[ \left( \mB^2 + 3m_{\Kstarzo}^2 + \qsq \right) T_2(\qsq) - \frac{\lambda(\mB,\Kstarzo,\qsq)}{\mB^2 - m^2_{\Kstarzo}} T_3(\qsq) \bigg] \Bigg) \nonumber \\
+A_{1,L/R,||}(\qsq) =& -N \sqrt{2}\left(\mB^2 - m_{\Kstarzo}^2\right) \bigg[ \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) \frac{ A_1(\qsq) }{ \mB + m_{\Kstarzo} } \nonumber \\
+& + 2\frac{m_b}{\qsq} \left( \Ceff7 - \Cpeff7 \right) T_ 2(\qsq) \bigg] \\
+A_{1,L/R,\bot}(\qsq) =&  N \sqrt{2} \lambda(\mB,\Kstarzo,\qsq)^{1/2}  \bigg[ \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) \frac{ V(\qsq) }{ \mB + m_{\Kstarzo} } \nonumber \\
+& + 2\frac{m_b}{\qsq} \left( \Ceff7 + \Cpeff7 \right) T_1(\qsq) \bigg] 
+\end{align}\end{subequations}
+with $\lambda(\mB,\psq,\qsq) = \left( \mB^2 - \psq - \qsq \right)^2 - 4\psq\qsq$.
+This expression uses the narrow width assumption for the \Kstarz(892) which assumes the \Kstarz decays on shell to \kpi, 
+ allowing the relativistic Breit-Wigner to be approximated as
+\begin{align}
+P_1^2(\psq) = \frac{1}{\left(\psq + m_{\Kstarz}^2\right)^2 +m_{\Kstarz}^2 \Gamma_{m_{\Kstarz}}^2 }   \frac{m_{\Kstarz}\Gamma_{m_{\Kstarz}}}{\pi}  \quad \to   \quad  \delta\left(\psq-m_{\Kstarz}^2\right) \ .
+\end{align}
+The transversity amplitudes can then be expressed in terms of seven \B\to\Kstarzo form factors ($A_i(\qsq), T_i(\qsq), V(\qsq)$).
+For large \Kstar energies, of order $\mB/2$, it is possible to reduce the seven different 
+form factors to two \emph{heavy-to-light} form factors as in Ref~\cite{Kruger:2005ep}.
+This allows the amplitudes to take a simple form neglecting corrections of order $1/m_b$ and $\alpha_S$,
+\begin{subequations}\begin{align}
+A_{1,L/R,0}(\qsq)=& -\frac{N}{2m_{\Kstarzo}\sqrt{\qsq}} (1-\qsq)^2 \Bigg[  \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) \nonumber\\
+&+ 2m_b \left( \Ceff7 - \Cpeff7 \right) \Bigg]  \xi_{||}\left(E_{\Kstarz}\right)   \\
+A_{1,L/R,||}(\qsq) =& -N \sqrt{2}\mB (1-\qsq) \bigg[ \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) \nonumber\\ 
+& + 2\frac{m_b}{\qsq} \left( \Ceff7 - \Cpeff7 \right) \bigg] \xi_{\bot}\left(E_{\Kstarz}\right) \\
+A_{1,L/R,\bot}(\qsq) =& + N \sqrt{2}  \mB (1-\qsq) \bigg[ \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) \nonumber \\
+& + 2\frac{m_b}{\qsq} \left( \Ceff7 + \Cpeff7 \right)  \bigg] \xi_{\bot}\left(E_{\Kstarz}\right) \, .
+\end{align}\end{subequations}
+
+\subsection{\BdToKpill amplitudes}
+
+Non-resonant \kpi effects in have been explored in Ref~\cite{Grinstein:2005ud} and the combination of multiple
+ \Kstar resonances have been explored in Ref~\cite{Lu:2011jm}.
+A combination of several resonant \kpi states can be achieved though the dependence
+of the matrix elements on the resonant mass, $m_{\Kstarzj}$ 
+and adding coefficients derived from the polarisation tensor~\cite{Lu:2011jm}.
+The effect of a \kpi S-wave has been explored in Refs~\cite{Becirevic:2012dp,Matias:2012qz} and also in more detail later in Chapter~\ref{chap:swave:theo}.
+The single \Kstarzz S-wave amplitude~\cite{Lu:2011jm} is given by
+\begin{align}
+A_{0,L/R,0} =& N\frac{\lambda\left(\mB,\Kstarzz\qsq\right)^{1/2}}{\sqrt{\qsq}} \bigg[ \left( (\Ceff9 - \Cpeff9 ) \mp (\Ceff10 - \Cpeff10 ) \right) F_1(\qsq)  \nonumber \\
+&+ 2 m_b \left( \Ceff7 + \Cpeff7 \right) \frac{ F_T(\qsq)}{\mB + m_{\Kstarzz} }  \bigg]  
+\end{align}
+where $F_1(\qsq)$ and $F_T(\qsq)$ are the \Bd\to\Kstarzz form factors. 
+
+
+
+

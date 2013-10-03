@@ -23,6 +23,7 @@
 \def\cern {\mbox{CERN}\xspace}
 \def\lhc    {\mbox{LHC}\xspace}
 \def\atlas  {\mbox{ATLAS}\xspace}
+\def\alice  {\mbox{ALICE}\xspace}
 \def\cms    {\mbox{CMS}\xspace}
 \def\babar  {\mbox{BaBar}\xspace}
 \def\belle  {\mbox{Belle}\xspace}
@@ -69,7 +70,7 @@
 \def\daq    {DAQ\xspace}
 \def\tfc    {TFC\xspace}
 \def\ecs    {ECS\xspace}
-\def\lone   {L0\xspace}
+\def\lzero   {L0\xspace}
 \def\hlt    {HLT\xspace}
 \def\hltone {HLT1\xspace}
 \def\hlttwo {HLT2\xspace}
@@ -539,6 +540,8 @@
 
 %% CKM, CP violation
 
+\def\ckm   {\ensuremath{\mathrm{CKM}}\xspace}
+
 \def\eps   {\ensuremath{\varepsilon}\xspace}
 \def\epsK  {\ensuremath{\varepsilon_K}\xspace}
 \def\epsB  {\ensuremath{\varepsilon_B}\xspace}
@@ -637,6 +640,8 @@
 \def\AFB      {\ensuremath{A_{\mathrm{FB}}}\xspace}
 \def\FL       {\ensuremath{F_{\mathrm{L}}}\xspace}
 \def\AT#1     {\ensuremath{A_{\mathrm{T}}^{#1}}\xspace}           % 2
+\def\ATIm     {\ensuremath{A_{\mathrm{T}}^{\text{Im}}}\xspace}           % 2
+\def\ATRe     {\ensuremath{A_{\mathrm{T}}^{\text{Re}}}\xspace}           % 2
 \def\btosgam  {\decay{\bquark}{\squark \g}}
 \def\btodgam  {\decay{\bquark}{\dquark \g}}
 \def\Bsmm     {\decay{\Bs}{\mup\mun}}
@@ -767,6 +772,7 @@
 \newcommand{\Imag}{\ensuremath{\mathcal{I}m}\xspace}
 
 \def\PDF {PDF\xspace}
+\def\PDFs {PDFs\xspace}
 
 \def\sPlot{\mbox{\em sPlot}}
 \def\sWeights{\mbox{\em sWeights}}
@@ -787,10 +793,11 @@
 
 %% PID
 
-\def\dllkpi     {\ensuremath{\mathrm{DLL}_{\kaon\pion}}\xspace}
-\def\dllppi     {\ensuremath{\mathrm{DLL}_{\proton\pion}}\xspace}
-\def\dllepi     {\ensuremath{\mathrm{DLL}_{\electron\pion}}\xspace}
-\def\dllmupi    {\ensuremath{\mathrm{DLL}_{\mmu\pi}}\xspace}
+\def\dll     {\ensuremath{\mathrm{\Delta(\log\mathcal{L})}}\xspace}
+\def\dllkpi     {\ensuremath{\mathrm{\Delta(\log\mathcal{L})}_{\kaon\pion}}\xspace}
+\def\dllppi     {\ensuremath{\mathrm{\Delta(\log\mathcal{L})}_{\proton\pion}}\xspace}
+\def\dllepi     {\ensuremath{\mathrm{\Delta(\log\mathcal{L})}_{\electron\pion}}\xspace}
+\def\dllmupi    {\ensuremath{\mathrm{\Delta(\log\mathcal{L})}_{\mmu\pi}}\xspace}
 
 %% Geometry
 \def\mphi       {\mbox{$\phi$}\xspace}
@@ -925,3 +932,5 @@
 \newcommand{\etc}{\mbox{\itshape etc.}\xspace}
 \newcommand{\cf}{\mbox{\itshape cf.}\xspace}
 \newcommand{\ffp}{\mbox{\itshape ff.}\xspace}
+\newcommand{\wrt}{\mbox{\itshape w.r.t.}\xspace}
+
